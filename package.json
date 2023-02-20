@@ -9,6 +9,7 @@
   "license": "MIT",
   "author": "NEUTRON <neutron0831@gmail.com> (https://github.com/neutron0831)",
   "scripts": {
+    "postinstall": "husky install && chmod +x .husky/*",
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
@@ -39,6 +40,7 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-vue": "^9.3.0",
     "gitmojis": "^3.13.4",
+    "husky": "^8.0.3",
     "prettier": "^2.8.4",
     "sass": "^1.55.0",
     "typescript": "^4.0.0",
