@@ -1,6 +1,7 @@
 // Plugins
 import vue from '@vitejs/plugin-vue'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+import AutoImport from 'unplugin-auto-import/vite'
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -18,6 +19,22 @@ export default defineConfig({
       autoImport: true,
       styles: {
         configFile: 'src/styles/settings.scss',
+      },
+    }),
+    AutoImport({
+      include: [/\.[tj]s$/, /\.vue$/, /\.vue\?vue/],
+      imports: [
+        'vue',
+        'vue-router',
+        'pinia',
+        {
+          '@/router': [['default', 'router']],
+          '@/store/app': [['useAppStore', 'useStore']],
+        },
+      ],
+      dts: 'src/auto-imports.d.ts',
+      eslintrc: {
+        enabled: true,
       },
     }),
   ],

@@ -8,6 +8,7 @@ module.exports = {
     'eslint:recommended',
     '@vue/eslint-config-typescript',
     'prettier',
+    './.eslintrc-auto-import.json',
   ],
   rules: {
     'vue/multi-word-component-names': 'off',
