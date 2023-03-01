@@ -2,6 +2,7 @@
 import vue from '@vitejs/plugin-vue'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -36,6 +37,10 @@ export default defineConfig({
       eslintrc: {
         enabled: true,
       },
+    }),
+    Components({
+      dirs: ['src/components', 'src/layouts'],
+      dts: 'src/components.d.ts',
     }),
   ],
   define: { 'process.env': {} },
