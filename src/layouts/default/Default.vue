@@ -6,5 +6,6 @@
   <VApp>
     <AppBar />
     <View />
+    <Footer />
   </VApp>
 </template>
