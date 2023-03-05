@@ -15,6 +15,14 @@ const routes = [
           description: 'NLP 100 Exercise 2020 (Rev 2) in TypeScript',
         },
       },
+      {
+        path: '/chapter:chapter([1-9]|10)',
+        name: 'Chapter',
+        component: () =>
+          import(/* webpackChunkName: "chapter" */ '@/views/Chapter.vue'),
+        sensitive: true,
+        strict: true,
+      },
     ],
   },
 ]

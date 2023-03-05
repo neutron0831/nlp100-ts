@@ -4,6 +4,8 @@
 
 <template>
   <VMain>
-    <RouterView />
+    <Suspense>
+      <RouterView />
+    </Suspense>
   </VMain>
 </template>

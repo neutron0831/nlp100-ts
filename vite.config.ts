@@ -28,6 +28,7 @@ export default defineConfig({
         'vue',
         'vue-router',
         'pinia',
+        '@vueuse/core',
         {
           '@/router': [['default', 'router']],
           '@/store/app': [['useAppStore', 'useStore']],
