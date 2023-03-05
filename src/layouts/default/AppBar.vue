@@ -8,6 +8,9 @@
       <VIcon color="primary" icon="mdi-language-typescript" />
       NLP 100 Exercise
     </VAppBarTitle>
+    <template v-slot:append>
+      <ThemeSwitch />
+    </template>
   </VAppBar>
 </template>
 

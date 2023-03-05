@@ -5,7 +5,17 @@
     exercises: Exercise[]
   }>()
 
+  const theme = useTheme()
   const route = useRoute()
+
+  const dark = computed(() => theme.global.current.value.dark)
+
+  function invertImg() {
+    if (route.params.chapter === '5') {
+      const svo: HTMLImageElement = document.querySelector('img[alt="SVO"]')!
+      svo.style.filter = `invert(${dark.value ? 0.93 : 0})`
+    }
+  }
 
   function scrollToExercise() {
     const id = route.hash
@@ -25,7 +35,12 @@
     }
   }
 
-  onMounted(() => scrollToExercise())
+  onMounted(() => {
+    invertImg()
+    scrollToExercise()
+  })
+
+  watch(dark, () => invertImg())
 
   watch(
     () => route.hash,
@@ -63,9 +78,6 @@
     .math,
     img {
       max-width: 100%;
-    }
-    img[alt='SVO'] {
-      filter: invert(0.93);
     }
 
     .v-timeline-item__body {

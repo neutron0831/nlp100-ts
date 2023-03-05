@@ -30,6 +30,7 @@ export default defineConfig({
         'pinia',
         '@vueuse/core',
         {
+          vuetify: ['useTheme'],
           '@/router': [['default', 'router']],
           '@/store/app': [['useAppStore', 'useStore']],
         },
