@@ -23,6 +23,16 @@ const routes = [
         sensitive: true,
         strict: true,
       },
+      {
+        path: '/:pathMatch(.*)*',
+        name: 'NotFound',
+        component: () =>
+          import(/* webpackChunkName: "notFound" */ '@/views/NotFound.vue'),
+        meta: {
+          title: '404 Not Found',
+          description: 'The page you were looking for does not exist.',
+        },
+      },
     ],
   },
 ]
