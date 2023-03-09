@@ -8,6 +8,7 @@
   ],
   "license": "MIT",
   "author": "NEUTRON <neutron0831@gmail.com> (https://github.com/neutron0831)",
+  "homepage": "https://nlp100-ts.netlify.app",
   "scripts": {
     "postinstall": "husky install && chmod +x .husky/*",
     "dev": "vite",
