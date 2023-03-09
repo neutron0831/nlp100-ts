@@ -7,6 +7,7 @@ specifiers:
   '@mdi/font': 7.0.96
   '@octokit/types': ^9.0.0
   '@types/node': ^18.11.9
+  '@types/web-bluetooth': ^0.0.16
   '@types/webfontloader': ^1.6.35
   '@types/webpack': ^5.28.0
   '@vitejs/plugin-vue': ^3.0.3
@@ -70,6 +71,7 @@ devDependencies:
   '@commitlint/parse': 17.4.4
   '@octokit/types': 9.0.0
   '@types/node': 18.13.0
+  '@types/web-bluetooth': 0.0.16
   '@types/webfontloader': 1.6.35
   '@types/webpack': 5.28.0
   '@vitejs/plugin-vue': 3.2.0_vite@3.2.5+vue@3.2.47

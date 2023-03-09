@@ -11,7 +11,7 @@
   "scripts": {
     "postinstall": "husky install && chmod +x .husky/*",
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build --target esnext",
     "preview": "vite preview",
     "lint": "eslint --ext .js,.ts,.vue --fix --no-error-on-unmatched-pattern src",
     "format": "prettier --write --ignore-unknown --no-error-on-unmatched-pattern src",
@@ -43,6 +43,7 @@
     "@commitlint/parse": "^17.4.4",
     "@octokit/types": "^9.0.0",
     "@types/node": "^18.11.9",
+    "@types/web-bluetooth": "^0.0.16",
     "@types/webfontloader": "^1.6.35",
     "@types/webpack": "^5.28.0",
     "@vitejs/plugin-vue": "^3.0.3",
