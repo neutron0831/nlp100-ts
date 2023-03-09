@@ -21,6 +21,7 @@
     "@mdi/font": "7.0.96",
     "@vueuse/core": "^9.13.0",
     "core-js": "^3.8.3",
+    "just-range": "^4.2.0",
     "just-sort-by": "^3.2.0",
     "pinia": "^2.0.23",
     "rehype-highlight": "^6.0.0",

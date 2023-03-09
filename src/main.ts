@@ -8,4 +8,8 @@ const app = createApp(App)
 
 registerPlugins(app)
 
+const store = useStore()
+
+await store.setChapters()
+
 app.mount('#app')

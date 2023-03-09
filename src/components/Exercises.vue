@@ -40,6 +40,11 @@
     scrollToExercise()
   })
 
+  onUpdated(() => {
+    invertImg()
+    scrollToExercise()
+  })
+
   watch(dark, () => invertImg())
 
   watch(

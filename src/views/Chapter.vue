@@ -2,11 +2,20 @@
   const route = useRoute()
   const store = useStore()
 
-  const number = computed(() => Number(route.params.chapter))
-  const chapter = computed(async () => await store.getChapter(number.value))
-  const { title, description, exercises } = toRefs(await chapter.value)
+  const number = ref(Number(route.params.chapter))
+  const chapter = ref(await store.getChapter(number.value))
+  const { title, description, exercises } = toRefs(chapter.value)
 
-  onMounted(() => {
+  async function updateChapter() {
+    number.value = Number(route.params.chapter)
+    chapter.value = await store.getChapter(number.value)
+    title.value = chapter.value.title
+    description.value = chapter.value.description
+    exercises.value = chapter.value.exercises
+  }
+
+  async function updateMeta() {
+    await updateChapter()
     document.title = title.value
     ;(
       document.querySelector('meta[name="description"]') as HTMLMetaElement
@@ -14,7 +23,11 @@
       new DOMParser().parseFromString(description.value, 'text/html').body
         .textContent,
     )
-  })
+  }
+
+  onMounted(async () => await updateMeta())
+
+  onUpdated(async () => await updateMeta())
 </script>
 
 <template>

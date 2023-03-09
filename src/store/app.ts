@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import range from 'just-range'
 import sortBy from 'just-sort-by'
 // @ts-ignore-line: TS2307
 import { Octokit } from 'https://cdn.skypack.dev/@octokit/rest'
@@ -8,6 +9,8 @@ import MDParser from '@/utils/md-parser'
 type ListForRepoResponseDataType = GetResponseDataTypeFromEndpointMethod<
   typeof Octokit.issues.listForRepo
 >
+
+export type Chapters = { [number: number]: Chapter }
 
 export interface Exercise {
   number: number
@@ -27,7 +30,7 @@ interface State {
   owner: string
   repository: string
   octokit: Octokit
-  chapters: { [number: number]: Chapter }
+  chapters: Chapters
 }
 
 export const useAppStore = defineStore('app', {
@@ -41,11 +44,11 @@ export const useAppStore = defineStore('app', {
     getChapters: (state) => state.chapters,
   },
   actions: {
-    async getChapter(number: number): Promise<Chapter> {
-      if (!Object.hasOwn(this.chapters, number)) {
-        await this.setChapter(number)
-      }
-      return this.chapters[number]
+    getChapter(number: number): Chapter {
+      return { ...this.chapters[number] }
+    },
+    async setChapters(): Promise<void> {
+      await Promise.all(range(1, 11).map(async (n) => await this.setChapter(n)))
     },
     async setChapter(number: number): Promise<void> {
       const mdParser = new MDParser()
