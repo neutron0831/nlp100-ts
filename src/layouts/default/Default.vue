@@ -5,7 +5,6 @@
 <template>
   <VApp>
     <AppBar />
-
     <View />
   </VApp>
 </template>

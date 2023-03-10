@@ -1,13 +1,18 @@
 <script lang="ts" setup>
-  //
+  const router = useRouter()
 </script>
 
 <template>
-  <VAppBar flat>
-    <VAppBarTitle>
-      <VIcon icon="mdi-circle-slice-6" />
-
-      Essentials Preset
+  <VAppBar flat density="compact">
+    <VAppBarTitle @click="router.push({ name: 'Home' })">
+      <VIcon color="primary" icon="mdi-language-typescript" />
+      NLP 100 Exercise
     </VAppBarTitle>
   </VAppBar>
 </template>
+
+<style lang="scss" scoped>
+  .v-app-bar-title {
+    cursor: pointer;
+  }
+</style>
