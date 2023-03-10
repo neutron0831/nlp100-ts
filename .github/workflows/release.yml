@@ -1,0 +1,68 @@
+name: Release
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+  workflow_dispatch:
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.package-version.outputs.version }}
+      tag-name: v${{ steps.package-version.outputs.version }}
+      tag-exist: ${{ steps.tag-exist.outputs.exists }}
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: latest
+      - name: Set package version
+        id: package-version
+        run: node -p -e '`version=${require("./package.json").version}`' >> $GITHUB_OUTPUT
+      - name: Check tag exists
+        uses: uruz-7/tag-exists-action@v2
+        id: tag-exist
+        with:
+          tag: v${{ steps.package-version.outputs.version }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  releases:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    needs: setup
+    if: needs.setup.outputs.tag-exist != 'true'
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: latest
+      - name: Get changelog of ${{ needs.setup.outputs.tag-name }}
+        uses: actions/github-script@v6
+        id: get-changelog
+        with:
+          script: |
+            changelog_md = require('fs').readFileSync('./CHANGELOG.md', 'utf8')
+            version = `${{ needs.setup.outputs.version }}`
+            template = new RegExp(String.raw`[\s\S]*<a name="${version}"></a>\n([\s\S]*?)[\n]{3}`)
+            changelog = `${changelog_md.match(template)[1]}`
+            core.setOutput('changelog', changelog)
+      - name: Bump version and push tag
+        id: tag-version
+        uses: mathieudutour/github-tag-action@v6.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          custom_tag: ${{ needs.setup.outputs.version }}
+      - name: Create a GitHub release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ needs.setup.outputs.tag-name }}
+          name: Release ${{ needs.setup.outputs.tag-name }}
+          body: '${{ steps.get-changelog.outputs.changelog }}'
