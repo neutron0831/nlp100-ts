@@ -16,7 +16,8 @@
     "preview": "vite preview",
     "lint": "eslint --ext .js,.ts,.vue --fix --no-error-on-unmatched-pattern src",
     "format": "prettier --write --ignore-unknown --no-error-on-unmatched-pattern src",
-    "commitmsg": "commitlint --config .commitlintrc.js --edit $GIT_PARAMS"
+    "commitmsg": "commitlint --config .commitlintrc.js --edit $GIT_PARAMS",
+    "changelog": "gitmoji-changelog && sed -E 's_&quot;_\"_g; s_&#x60;_`_g; s_(\\(|,)#([0-9]+)?_\\1[#\\2](https://github.com/neutron0831/nlp100-ts/issues/\\2)_g; s_\\[([0-9a-z]{7})\\]$_[[\\1](https://github.com/neutron0831/nlp100-ts/commit/\\1)]_g' CHANGELOG.md | sed -E \"4s_## ([0-9]\\.[0-9]\\.[0-9])_## [v\\1](https://github.com/neutron0831/nlp100-ts/compare/$(git describe --tags --abbrev=0)...\\1)_g\" > CHANGELOG.md"
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
@@ -53,6 +54,7 @@
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-vue": "^9.3.0",
+    "gitmoji-changelog": "^2.3.0",
     "gitmojis": "^3.13.4",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
