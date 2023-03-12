@@ -4,7 +4,7 @@
 
 0. [Reversed string](./01/ex00.ts)
 1. [“schooled”](./01/ex01.ts)
-2. “shoe” + “cold” = “schooled”
+2. [“shoe” + “cold” = “schooled”](./01/ex02.ts)
 3. Pi
 4. Atomic symbols
 5. n-gram

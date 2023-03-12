@@ -8,7 +8,7 @@ Obtain the string that arranges letters of the string "stressed" in reverse orde
 
 Obtain the string that concatenates the 1st, 3rd, 5th, and 7th letters in the string "schooled".
 
-## 02. "shoe" + "cold" = "schooled"
+## 02. ["shoe" + "cold" = "schooled"](./ex02.ts)
 
 Obtain the string "schooled" by concatenating the letters in "shoe" and "cold" one after the other from head to tail.
 
