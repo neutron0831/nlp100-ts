@@ -1,7 +1,7 @@
 # Changelog
 
 <a name="0.0.1"></a>
-## [v0.0.1](https://github.com/neutron0831/nlp100-ts/compare/v0.0.0...0.0.1) (2023-03-12)
+## [v0.0.1](https://github.com/neutron0831/nlp100-ts/compare/v0.0.0...v0.0.1) (2023-03-12)
 
 ### Added
 
