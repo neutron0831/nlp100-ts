@@ -29,6 +29,7 @@ export default defineConfig({
         'vue-router',
         'pinia',
         '@vueuse/core',
+        'vitest',
         {
           vuetify: ['useTheme'],
           '@/router': [['default', 'router']],
