@@ -12,7 +12,7 @@ Obtain the string that concatenates the 1st, 3rd, 5th, and 7th letters in the st
 
 Obtain the string "schooled" by concatenating the letters in "shoe" and "cold" one after the other from head to tail.
 
-## 03. Pi
+## 03. [Pi](./ex03.ts)
 
 Split the sentence "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics". into words, and create a list whose element presents the number of alphabetical letters in the corresponding word.
 
