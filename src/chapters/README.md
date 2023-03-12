@@ -3,7 +3,7 @@
 ## [Chapter 1: Warm-up](./01)
 
 0. [Reversed string](./01/ex00.ts)
-1. “schooled”
+1. [“schooled”](./01/ex01.ts)
 2. “shoe” + “cold” = “schooled”
 3. Pi
 4. Atomic symbols

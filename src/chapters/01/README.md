@@ -4,7 +4,7 @@
 
 Obtain the string that arranges letters of the string "stressed" in reverse order (tail to head).
 
-## 01. "schooled"
+## 01. ["schooled"](./ex01.ts)
 
 Obtain the string that concatenates the 1st, 3rd, 5th, and 7th letters in the string "schooled".
 
