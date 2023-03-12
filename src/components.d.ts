@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppBar: typeof import('./layouts/default/AppBar.vue')['default']
     ChapterList: typeof import('./components/ChapterList.vue')['default']
+    CodeCard: typeof import('./components/CodeCard.vue')['default']
     Default: typeof import('./layouts/default/Default.vue')['default']
     Exercises: typeof import('./components/Exercises.vue')['default']
     Footer: typeof import('./layouts/default/Footer.vue')['default']

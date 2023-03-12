@@ -62,6 +62,7 @@
       size="x-small"
     >
       <div :id="`ex${exercise.number}`" v-html="exercise.body"></div>
+      <CodeCard :number="exercise.number" :state="exercise.state" />
     </VTimelineItem>
   </VTimeline>
 </template>

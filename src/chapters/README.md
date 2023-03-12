@@ -2,7 +2,7 @@
 
 ## [Chapter 1: Warm-up](./01)
 
-0. Reversed string
+0. [Reversed string](./01/ex00.ts)
 1. “schooled”
 2. “shoe” + “cold” = “schooled”
 3. Pi

@@ -1,6 +1,6 @@
 # Chapter 1: Warm-up
 
-## 00. Reversed string
+## 00. [Reversed string](./ex00.ts)
 
 Obtain the string that arranges letters of the string "stressed" in reverse order (tail to head).
 
