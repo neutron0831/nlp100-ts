@@ -1,6 +1,6 @@
 # Chapters
 
-## Chapter 1: Warm-up
+## [Chapter 1: Warm-up](./01)
 
 0. Reversed string
 1. “schooled”
