@@ -1,6 +1,6 @@
 {
   "name": "nlp100-ts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "NLP 100 Exercise 2020 (Rev 2) in TypeScript",
   "keywords": [
     "nlp100",
