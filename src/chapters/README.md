@@ -9,7 +9,7 @@
 4. [Atomic symbols](./01/ex04.ts)
 5. [n-gram](./01/ex05.ts)
 6. [Set](./01/ex06.ts)
-7. Template-based sentence generation
+7. [Template-based sentence generation](./01/ex07.ts)
 8. cipher text
 9. Typoglycemia
 

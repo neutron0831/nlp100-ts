@@ -28,7 +28,7 @@ Implement a function that obtains n-grams from a given sequence object (e.g., st
 
 Let the sets of letter bi-grams from the words "paraparaparadise" and "paragraph" $X$ and $Y$, respectively. Obtain the union, intersection, difference of the two sets. In addition, check whether the bigram "se" is included in the sets $X$ and $Y$.
 
-## 07. Template-based sentence generation
+## 07. [Template-based sentence generation](./ex07.ts)
 
 Implement a function that receives arguments, `x`, `y`, and `z` and returns a string "{y} is {z} at {x}", where "{x}", "{y}", and "{z}" denote the values of `x`, `y`, and `z`, respectively. In addition, confirm the return string by giving the arguments `x=12`, `y="temperature"`, and `z=22.4`.
 
