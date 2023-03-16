@@ -42,7 +42,7 @@ Implement a function `cipher` that converts a given string with the specificatio
 
 Use this function to cipher and decipher an English message.
 
-## 09. Typoglycemia
+## 09. [Typoglycemia](./ex09.ts)
 
 Write a program with the specification:
 

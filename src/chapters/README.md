@@ -11,7 +11,7 @@
 6. [Set](./01/ex06.ts)
 7. [Template-based sentence generation](./01/ex07.ts)
 8. [cipher text](./01/ex08.ts)
-9. Typoglycemia
+9. [Typoglycemia](./01/ex09.ts)
 
 ## Chapter 2: UNIX Commands
 

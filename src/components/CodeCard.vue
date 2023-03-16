@@ -52,7 +52,9 @@
       | object
     >(result)
       // string
-      .with(P.string, () => `'${result}'`)
+      .with(P.string, () =>
+        result.includes("'") ? `"${result}"` : `'${result}'`,
+      )
       // string[]
       .with(P.array(P.string), () => result.join('\n'))
       // number[]
