@@ -1,6 +1,6 @@
 {
   "name": "nlp100-ts",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "NLP 100 Exercise 2020 (Rev 2) in TypeScript",
   "keywords": [
     "nlp100",
@@ -14,17 +14,17 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build --target esnext",
     "preview": "vite preview",
+    "test": "vitest --silent",
     "lint": "eslint --ext .js,.ts,.vue --fix --no-error-on-unmatched-pattern src",
     "format": "prettier --write --ignore-unknown --no-error-on-unmatched-pattern src",
     "commitmsg": "commitlint --config .commitlintrc.js --edit $GIT_PARAMS",
-    "changelog": "gitmoji-changelog && sed -E 's_&quot;_\"_g; s_&#x60;_`_g; s_(\\(|,)#([0-9]+)?_\\1[#\\2](https://github.com/neutron0831/nlp100-ts/issues/\\2)_g; s_\\[([0-9a-z]{7})\\]$_[[\\1](https://github.com/neutron0831/nlp100-ts/commit/\\1)]_g' CHANGELOG.md | sed -E \"4s_## ([0-9]\\.[0-9]\\.[0-9])_## [v\\1](https://github.com/neutron0831/nlp100-ts/compare/$(git describe --tags --abbrev=0)...\\1)_g\" > CHANGELOG.md"
+    "changelog": "gitmoji-changelog && sed -E 's_&quot;_\"_g; s_&#x60;_`_g; s_(\\(|,)#([0-9]+)?_\\1[#\\2](https://github.com/neutron0831/nlp100-ts/issues/\\2)_g; s_\\[([0-9a-z]{7})\\]$_[[\\1](https://github.com/neutron0831/nlp100-ts/commit/\\1)]_g' CHANGELOG.md | sed -E \"4s_## ([0-9]\\.[0-9]\\.[0-9])_## [v\\1](https://github.com/neutron0831/nlp100-ts/compare/$(git describe --tags --abbrev=0)...v\\1)_g\" > CHANGELOG.md"
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
     "@vueuse/core": "^9.13.0",
     "core-js": "^3.8.3",
-    "just-range": "^4.2.0",
-    "just-sort-by": "^3.2.0",
+    "lodash": "^4.17.21",
     "pinia": "^2.0.23",
     "rehype-highlight": "^6.0.0",
     "rehype-katex": "^6.0.2",
@@ -34,6 +34,7 @@
     "remark-parse": "^10.0.1",
     "remark-rehype": "^10.1.0",
     "roboto-fontface": "*",
+    "ts-pattern": "^4.2.1",
     "vue": "^3.2.13",
     "vue-router": "^4.0.0",
     "vuetify": "^3.0.0",
@@ -44,6 +45,7 @@
     "@commitlint/config-conventional": "^17.4.4",
     "@commitlint/parse": "^17.4.4",
     "@octokit/types": "^9.0.0",
+    "@types/lodash": "^4.14.191",
     "@types/node": "^18.11.9",
     "@types/web-bluetooth": "^0.0.16",
     "@types/webfontloader": "^1.6.35",
@@ -65,6 +67,7 @@
     "unplugin-vue-components": "^0.24.0",
     "vite": "^3.1.9",
     "vite-plugin-vuetify": "^1.0.0-alpha.12",
+    "vitest": "^0.29.2",
     "vue-tsc": "^1.0.9"
   },
   "private": true

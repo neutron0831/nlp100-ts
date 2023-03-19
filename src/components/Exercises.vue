@@ -58,10 +58,11 @@
     <VTimelineItem
       v-for="exercise in exercises"
       :key="exercise.number"
-      :dot-color="exercise.state === 'open' ? 'grey' : 'green'"
+      :dot-color="exercise.state === 'open' ? 'grey' : 'primary'"
       size="x-small"
     >
       <div :id="`ex${exercise.number}`" v-html="exercise.body"></div>
+      <CodeCard :number="exercise.number" :state="exercise.state" />
     </VTimelineItem>
   </VTimeline>
 </template>

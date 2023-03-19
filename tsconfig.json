@@ -16,7 +16,8 @@
     "types": ["node", "vuetify", "web-bluetooth"],
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "skipLibCheck": true
   },
   "include": [
     "src/**/*.ts",
