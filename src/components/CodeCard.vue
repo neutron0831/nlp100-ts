@@ -35,16 +35,17 @@
   }
 
   async function Run() {
+    const result = Ex.value
+      ? Ex.value[`ex${exercise}`](
+          ...input.value!.map((value, i) =>
+            args.value![i].type === 'number'
+              ? Number(value || undefined)
+              : value || undefined,
+          ),
+        )
+      : '// output'
     output.value = await mdCode(
-      Ex.value
-        ? Ex.value[`ex${exercise}`](
-            ...input.value!.map((value, i) =>
-              args.value![i].type === 'number'
-                ? Number(value || undefined)
-                : value || undefined,
-            ),
-          )
-        : '// output',
+      typeof result == 'object' ? JSON.stringify(result, null, 2) : result,
     )
   }
 

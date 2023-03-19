@@ -6,7 +6,7 @@
 1. [“schooled”](./01/ex01.ts)
 2. [“shoe” + “cold” = “schooled”](./01/ex02.ts)
 3. [Pi](./01/ex03.ts)
-4. Atomic symbols
+4. [Atomic symbols](./01/ex04.ts)
 5. n-gram
 6. Set
 7. Template-based sentence generation
