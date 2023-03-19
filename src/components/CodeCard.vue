@@ -47,7 +47,7 @@
       : '// output'
 
     const parseResult: string = match<
-      string | (number | string[][])[] | object
+      string | (number | string[][] | (boolean | string[][]))[] | object
     >(result)
       // string
       .with(P.string, () => `'${result}'`)
@@ -55,6 +55,10 @@
       .with(P.array(P.number), () => JSON.stringify(result))
       // string[][][]
       .with(P.array(P.array(P.array(P.string))), () =>
+        result.map((r: string[]) => JSON.stringify(r)).join('\n'),
+      )
+      // (boolean | string[][])[]
+      .with(P.array(P.union(P.boolean, P.array(P.array(P.string)))), () =>
         result.map((r: string[]) => JSON.stringify(r)).join('\n'),
       )
       // object

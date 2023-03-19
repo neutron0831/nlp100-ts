@@ -8,7 +8,7 @@
 3. [Pi](./01/ex03.ts)
 4. [Atomic symbols](./01/ex04.ts)
 5. [n-gram](./01/ex05.ts)
-6. Set
+6. [Set](./01/ex06.ts)
 7. Template-based sentence generation
 8. cipher text
 9. Typoglycemia

@@ -24,7 +24,7 @@ Split the sentence "Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nat
 
 Implement a function that obtains n-grams from a given sequence object (e.g., string and list). Use this function to obtain word bi-grams and letter bi-grams from the sentence "I am an NLPer".
 
-## 06. Set
+## 06. [Set](./ex06.ts)
 
 Let the sets of letter bi-grams from the words "paraparaparadise" and "paragraph" $X$ and $Y$, respectively. Obtain the union, intersection, difference of the two sets. In addition, check whether the bigram "se" is included in the sets $X$ and $Y$.
 

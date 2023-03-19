@@ -1,6 +1,5 @@
 import { defineStore } from 'pinia'
-import range from 'just-range'
-import sortBy from 'just-sort-by'
+import { range, sortBy } from 'lodash'
 // @ts-ignore-line: TS2307
 import { Octokit } from 'https://cdn.skypack.dev/@octokit/rest'
 import { GetResponseDataTypeFromEndpointMethod } from '@octokit/types'

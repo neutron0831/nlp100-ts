@@ -6,6 +6,7 @@ specifiers:
   '@commitlint/parse': ^17.4.4
   '@mdi/font': 7.0.96
   '@octokit/types': ^9.0.0
+  '@types/lodash': ^4.14.191
   '@types/node': ^18.11.9
   '@types/web-bluetooth': ^0.0.16
   '@types/webfontloader': ^1.6.35
@@ -21,9 +22,8 @@ specifiers:
   gitmoji-changelog: ^2.3.0
   gitmojis: ^3.13.4
   husky: ^8.0.3
-  just-range: ^4.2.0
-  just-sort-by: ^3.2.0
   lint-staged: ^13.1.2
+  lodash: ^4.17.21
   pinia: ^2.0.23
   prettier: ^2.8.4
   rehype-highlight: ^6.0.0
@@ -52,8 +52,7 @@ dependencies:
   '@mdi/font': 7.0.96
   '@vueuse/core': 9.13.0_vue@3.2.47
   core-js: 3.28.0
-  just-range: 4.2.0
-  just-sort-by: 3.2.0
+  lodash: 4.17.21
   pinia: 2.0.30_hmuptsblhheur2tugfgucj7gc4
   rehype-highlight: 6.0.0
   rehype-katex: 6.0.2
@@ -74,6 +73,7 @@ devDependencies:
   '@commitlint/config-conventional': 17.4.4
   '@commitlint/parse': 17.4.4
   '@octokit/types': 9.0.0
+  '@types/lodash': 4.14.191
   '@types/node': 18.13.0
   '@types/web-bluetooth': 0.0.16
   '@types/webfontloader': 1.6.35
@@ -809,6 +809,10 @@ packages:
   /@types/katex/0.11.1:
     resolution: {integrity: sha512-DUlIj2nk0YnJdlWgsFuVKcX27MLW0KbKmGVoUHmFr+74FYYNUDAaj9ZqTADvsbE8rfxuVmSFc7KczYn5Y09ozg==}
     dev: false
+
+  /@types/lodash/4.14.191:
+    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
+    dev: true
 
   /@types/mdast/3.0.10:
     resolution: {integrity: sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==}
@@ -3818,14 +3822,6 @@ packages:
       verror: 1.10.0
     dev: true
 
-  /just-range/4.2.0:
-    resolution: {integrity: sha512-z2Ip8H2j7a9Vr8rKFi0IZf4IXn2Yuq2lGZFS41GjfPwksoHWTaTx1xIjU6C0HyQ1jBXEoz/FzjS5eyVXeW19tg==}
-    dev: false
-
-  /just-sort-by/3.2.0:
-    resolution: {integrity: sha512-kfKNELhpDd0/aC/dBeT1uS+pUmFgHIcU6sDnUKZRuGoGYx8mKgZLCNlL6QfNYFzUkqPUEVOsiN9uaZs4z2X9Vw==}
-    dev: false
-
   /katex/0.13.24:
     resolution: {integrity: sha512-jZxYuKCma3VS5UuxOx/rFV1QyGSl3Uy/i0kTJF3HgQ5xMinCQVF8Zd4bMY/9aI9b9A2pjIBOsjSSm68ykTAr8w==}
     hasBin: true
@@ -4140,7 +4136,6 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /log-update/4.0.0:
     resolution: {integrity: sha512-9fkkDevMefjg0mmzWFBW8YkFP91OrizzkW3diF7CpG+S2EYdy4+TVfGwz1zeF8x7hCx1ovSPTOE9Ngib74qqUg==}
