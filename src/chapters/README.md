@@ -7,7 +7,7 @@
 2. [“shoe” + “cold” = “schooled”](./01/ex02.ts)
 3. [Pi](./01/ex03.ts)
 4. [Atomic symbols](./01/ex04.ts)
-5. n-gram
+5. [n-gram](./01/ex05.ts)
 6. Set
 7. Template-based sentence generation
 8. cipher text

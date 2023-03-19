@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+  import { match, P } from 'ts-pattern'
   import MDParser from '@/utils/md-parser'
   import { Argument, formatCode, getArguments } from '@/utils/source-code'
 
@@ -44,9 +45,22 @@
           ),
         )
       : '// output'
-    output.value = await mdCode(
-      typeof result == 'object' ? JSON.stringify(result, null, 2) : result,
-    )
+
+    const parseResult: string = match<
+      string | (number | string[][])[] | object
+    >(result)
+      // string
+      .with(P.string, () => `'${result}'`)
+      // number[]
+      .with(P.array(P.number), () => JSON.stringify(result))
+      // string[][][]
+      .with(P.array(P.array(P.array(P.string))), () =>
+        result.map((r: string[]) => JSON.stringify(r)).join('\n'),
+      )
+      // object
+      .otherwise(() => JSON.stringify(result, null, 2))
+
+    output.value = await mdCode(parseResult)
   }
 
   onMounted(async () => {
