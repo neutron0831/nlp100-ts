@@ -3,12 +3,12 @@
   const store = useStore()
 
   const number = ref(Number(route.params.chapter))
-  const chapter = ref(await store.getChapter(number.value))
+  const chapter = ref(store.getChapter(number.value))
   const { title, description, exercises } = toRefs(chapter.value)
 
   async function updateChapter() {
     number.value = Number(route.params.chapter)
-    chapter.value = await store.getChapter(number.value)
+    chapter.value = store.getChapter(number.value)
     title.value = chapter.value.title
     description.value = chapter.value.description
     exercises.value = chapter.value.exercises
