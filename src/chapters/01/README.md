@@ -32,7 +32,7 @@ Let the sets of letter bi-grams from the words "paraparaparadise" and "paragraph
 
 Implement a function that receives arguments, `x`, `y`, and `z` and returns a string "{y} is {z} at {x}", where "{x}", "{y}", and "{z}" denote the values of `x`, `y`, and `z`, respectively. In addition, confirm the return string by giving the arguments `x=12`, `y="temperature"`, and `z=22.4`.
 
-## 08. cipher text
+## 08. [cipher text](./ex08.ts)
 
 Implement a function `cipher` that converts a given string with the specification:
 

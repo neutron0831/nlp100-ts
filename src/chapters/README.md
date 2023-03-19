@@ -10,7 +10,7 @@
 5. [n-gram](./01/ex05.ts)
 6. [Set](./01/ex06.ts)
 7. [Template-based sentence generation](./01/ex07.ts)
-8. cipher text
+8. [cipher text](./01/ex08.ts)
 9. Typoglycemia
 
 ## Chapter 2: UNIX Commands
