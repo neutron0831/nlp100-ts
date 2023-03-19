@@ -1,5 +1,21 @@
 # Changelog
 
+<a name="0.1.1"></a>
+## [v0.1.1](https://github.com/neutron0831/nlp100-ts/compare/v0.1.0...v0.1.1) (2023-03-19)
+
+### Changed
+
+- 🚚 Remove trailing `s` from job_id [[93d0a68](https://github.com/neutron0831/nlp100-ts/commit/93d0a68)]
+
+### Removed
+
+- 🔥 Remove unnecessary `await` operator [[82c9678](https://github.com/neutron0831/nlp100-ts/commit/82c9678)]
+
+### Fixed
+
+- 🚑 Set `state` to `all` for listing issues [[943530d](https://github.com/neutron0831/nlp100-ts/commit/943530d)]
+
+
 <a name="0.1.0"></a>
 ## [v0.1.0](https://github.com/neutron0831/nlp100-ts/compare/v0.0.1...v0.1.0) (2023-03-19)
 
