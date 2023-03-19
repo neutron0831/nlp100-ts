@@ -65,6 +65,7 @@ export const useAppStore = defineStore('app', {
               owner: this.owner,
               repo: this.repository,
               milestone: number,
+              state: 'all',
             })
           ).data.map(async (issue: ListForRepoResponseDataType) => ({
             number: issue.number % 100,
