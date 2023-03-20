@@ -136,7 +136,13 @@
         </VRow>
       </VCol>
       <VCol class="v-col-auto">
-        <VBtn id="run" color="primary" @click="Run">Run</VBtn>
+        <VBtn
+          color="primary"
+          :style="{ 'margin-top': (args!.length > 0 ? 10 : 0) + 'px' }"
+          @click="Run"
+        >
+          Run
+        </VBtn>
       </VCol>
     </VRow>
     <div v-html="output"></div>
@@ -147,9 +153,5 @@
   .v-btn#copy {
     position: absolute;
     right: 0;
-  }
-
-  .v-btn#run {
-    margin-top: 10px;
   }
 </style>
