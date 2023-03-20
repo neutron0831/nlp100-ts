@@ -8,6 +8,7 @@ specifiers:
   '@octokit/types': ^9.0.0
   '@types/lodash': ^4.14.191
   '@types/node': ^18.11.9
+  '@types/papaparse': ^5.3.7
   '@types/web-bluetooth': ^0.0.16
   '@types/webfontloader': ^1.6.35
   '@types/webpack': ^5.28.0
@@ -24,6 +25,7 @@ specifiers:
   husky: ^8.0.3
   lint-staged: ^13.1.2
   lodash: ^4.17.21
+  papaparse: ^5.4.0
   pinia: ^2.0.23
   prettier: ^2.8.4
   rehype-highlight: ^6.0.0
@@ -53,6 +55,7 @@ dependencies:
   '@vueuse/core': 9.13.0_vue@3.2.47
   core-js: 3.28.0
   lodash: 4.17.21
+  papaparse: 5.4.0
   pinia: 2.0.30_hmuptsblhheur2tugfgucj7gc4
   rehype-highlight: 6.0.0
   rehype-katex: 6.0.2
@@ -75,6 +78,7 @@ devDependencies:
   '@octokit/types': 9.0.0
   '@types/lodash': 4.14.191
   '@types/node': 18.13.0
+  '@types/papaparse': 5.3.7
   '@types/web-bluetooth': 0.0.16
   '@types/webfontloader': 1.6.35
   '@types/webpack': 5.28.0
@@ -833,6 +837,12 @@ packages:
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
+    dev: true
+
+  /@types/papaparse/5.3.7:
+    resolution: {integrity: sha512-f2HKmlnPdCvS0WI33WtCs5GD7X1cxzzS/aduaxSu3I7TbhWlENjSPs6z5TaB9K0J+BH1jbmqTaM+ja5puis4wg==}
+    dependencies:
+      '@types/node': 18.13.0
     dev: true
 
   /@types/parse5/6.0.3:
@@ -5121,6 +5131,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /papaparse/5.4.0:
+    resolution: {integrity: sha512-ZBQABWG09p+u8rFoJVl/GhgxZ5zy9Zh1Lu/LVc7VX5T4nljjC14/YTcpebYwqP218B9X307eBOP7Tuhoqv7v7w==}
+    dev: false
 
   /parallel-transform/1.2.0:
     resolution: {integrity: sha512-P2vSmIu38uIlvdcU7fDkyrxj33gTUy/ABO5ZUbGowxNCopBq/OoD42bP4UmMrJoPyk4Uqf0mu3mtWBhHCZD8yg==}
