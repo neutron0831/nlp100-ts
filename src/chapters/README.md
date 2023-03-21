@@ -13,7 +13,7 @@
 8. [cipher text](./01/ex08.ts)
 9. [Typoglycemia](./01/ex09.ts)
 
-## Chapter 2: UNIX Commands
+## [Chapter 2: UNIX Commands](./02)
 
 10. Line count
 11. Replace tabs into spaces
