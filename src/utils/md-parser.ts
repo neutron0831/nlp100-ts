@@ -4,6 +4,7 @@ import remarkMath from 'remark-math'
 import remarkRehype from 'remark-rehype'
 import rehypeKatex from 'rehype-katex'
 import rehypeHighlight from 'rehype-highlight'
+import rehypeUrlInCode from './rehype-url-in-code'
 import rehypeStringify from 'rehype-stringify'
 
 export default class MDParser {
@@ -17,6 +18,7 @@ export default class MDParser {
       .use(rehypeKatex)
       .use(rehypeHighlight)
       .use(rehypeStringify)
+      .use(rehypeUrlInCode)
   }
 
   async parse(markdown: string): Promise<string> {

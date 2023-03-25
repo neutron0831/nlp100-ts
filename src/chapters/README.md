@@ -15,7 +15,7 @@
 
 ## [Chapter 2: UNIX Commands](./02)
 
-10. Line count
+10. [Line count](./02/ex10.ts)
 11. Replace tabs into spaces
 12. col1.txt from the first column, col2.txt from the second column
 13. Merging col1.txt and col2.txt
