@@ -14,7 +14,7 @@ Replace every occurrence of a tab character into a space. Confirm the result by 
 
 Extract the value of the first column of each line, and store the output into `col1.txt`. Extract the value of the second column of each line, and store the output into `col2.txt`. Confirm the result by using `cut` command.
 
-## 13. Merging col1.txt and col2.txt
+## 13. [Merging col1.txt and col2.txt](./ex13.ts)
 
 Join the contents of `col1.txt` and `col2.txt`, and create a text file whose each line contains the values of the first and second columns (separated by tab character) of the original file. Confirm the result by using `paste` command.
 
