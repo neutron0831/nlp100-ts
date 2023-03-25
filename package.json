@@ -15,6 +15,7 @@
     "build": "vue-tsc --noEmit && vite build --target esnext",
     "preview": "vite preview",
     "test": "vitest --silent",
+    "test:ch": "vitest src/chapters/$ch/test",
     "lint": "eslint --ext .js,.ts,.vue --fix --no-error-on-unmatched-pattern src",
     "format": "prettier --write --ignore-unknown --no-error-on-unmatched-pattern src",
     "commitmsg": "commitlint --config .commitlintrc.js --edit $GIT_PARAMS",
