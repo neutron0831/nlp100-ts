@@ -26,6 +26,7 @@
     "@vueuse/core": "^9.13.0",
     "core-js": "^3.8.3",
     "lodash": "^4.17.21",
+    "papaparse": "^5.4.1",
     "pinia": "^2.0.23",
     "rehype-highlight": "^6.0.0",
     "rehype-katex": "^6.0.2",

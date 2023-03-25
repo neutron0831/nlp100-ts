@@ -10,7 +10,7 @@ Count the number of lines of the file. Confirm the result by using `wc` command.
 
 Replace every occurrence of a tab character into a space. Confirm the result by using `sed`, `tr`, or `expand` command.
 
-## 12. col1.txt from the first column, col2.txt from the second column
+## 12. [col1.txt from the first column, col2.txt from the second column](./ex12.ts)
 
 Extract the value of the first column of each line, and store the output into `col1.txt`. Extract the value of the second column of each line, and store the output into `col2.txt`. Confirm the result by using `cut` command.
 

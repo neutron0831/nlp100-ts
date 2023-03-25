@@ -57,7 +57,11 @@
         result.includes("'") ? `"${result}"` : `'${result}'`,
       )
       // string[]
-      .with(P.array(P.string), () => result.join('\n'))
+      .with(P.array(P.string), () =>
+        result
+          .map((r: string) => (r.includes("'") ? `"${r}"` : `'${r}'`))
+          .join('\n'),
+      )
       // number[]
       .with(P.array(P.number), () => JSON.stringify(result))
       // string[][][]

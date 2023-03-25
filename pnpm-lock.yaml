@@ -25,6 +25,7 @@ specifiers:
   husky: ^8.0.3
   lint-staged: ^13.1.2
   lodash: ^4.17.21
+  papaparse: ^5.4.1
   pinia: ^2.0.23
   prettier: ^2.8.4
   rehype-highlight: ^6.0.0
@@ -57,6 +58,7 @@ dependencies:
   '@vueuse/core': 9.13.0_vue@3.2.47
   core-js: 3.28.0
   lodash: 4.17.21
+  papaparse: 5.4.1
   pinia: 2.0.30_hmuptsblhheur2tugfgucj7gc4
   rehype-highlight: 6.0.0
   rehype-katex: 6.0.2
@@ -5135,6 +5137,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /papaparse/5.4.1:
+    resolution: {integrity: sha512-HipMsgJkZu8br23pW15uvo6sib6wne/4woLZPlFf3rpDyMe9ywEXUsuD7+6K9PRkJlVT51j/sCOYDKGGS3ZJrw==}
+    dev: false
 
   /parallel-transform/1.2.0:
     resolution: {integrity: sha512-P2vSmIu38uIlvdcU7fDkyrxj33gTUy/ABO5ZUbGowxNCopBq/OoD42bP4UmMrJoPyk4Uqf0mu3mtWBhHCZD8yg==}

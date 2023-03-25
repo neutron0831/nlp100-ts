@@ -17,7 +17,7 @@
 
 10. [Line count](./02/ex10.ts)
 11. [Replace tabs into spaces](./02/ex11.ts)
-12. col1.txt from the first column, col2.txt from the second column
+12. [col1.txt from the first column, col2.txt from the second column](./02/ex12.ts)
 13. Merging col1.txt and col2.txt
 14. First N lines
 15. Last N lines
