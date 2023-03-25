@@ -178,7 +178,7 @@
         </VBtn>
       </VCol>
     </VRow>
-    <div v-html="output"></div>
+    <div id="output" v-html="output"></div>
   </div>
 </template>
 
@@ -192,5 +192,10 @@
     .v-expansion-panel-text#test-code .v-expansion-panel-text__wrapper {
       padding: 0;
     }
+  }
+
+  #output {
+    max-height: 50vh;
+    overflow-y: auto;
   }
 </style>

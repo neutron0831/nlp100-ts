@@ -6,7 +6,7 @@ The file [popular-names.txt](../../assets/popular-names.txt) stores names of bab
 
 Count the number of lines of the file. Confirm the result by using `wc` command.
 
-## 11. Replace tabs into spaces
+## 11. [Replace tabs into spaces](./ex11.ts)
 
 Replace every occurrence of a tab character into a space. Confirm the result by using `sed`, `tr`, or `expand` command.
 
