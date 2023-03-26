@@ -22,7 +22,7 @@
 14. [First N lines](./02/ex14.ts)
 15. [Last N lines](./02/ex15.ts)
 16. [Split a file into N pieces](./02/ex16.ts)
-17. Distinct strings in the first column
+17. [Distinct strings in the first column](./02/ex17.ts)
 18. Sort lines in descending order of the third column
 19. Frequency of a string in the first column in descending order
 

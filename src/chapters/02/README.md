@@ -30,7 +30,7 @@ Receive a natural number $N$ from a command-line argument, and output the last $
 
 Receive a natural number $N$ from a command-line argument, and split the input file into $N$ pieces at line boundaries. Confirm the result by using `split` command.
 
-## 17. Distinct strings in the first column
+## 17. [Distinct strings in the first column](./ex17.ts)
 
 Find distinct strings (a set of strings) of the first column of the file. Confirm the result by using `cut`, `sort`, and `uniq` commands.
 
