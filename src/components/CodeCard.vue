@@ -16,6 +16,7 @@
   const sourceCode = ref<string>()
   const isCopied = ref(false)
   const code = ref<string>()
+  const testCode = ref<string>()
   const args = ref<Argument[]>()
   const input = ref<string[]>()
   const output = ref(await mdCode('// output'))
@@ -37,7 +38,7 @@
 
   async function Run() {
     const result = Ex.value
-      ? Ex.value[`ex${exercise}`](
+      ? await Ex.value[`ex${exercise}`](
           ...input.value!.map((value, i) =>
             args.value![i].type === 'number'
               ? Number(value || undefined)
@@ -56,7 +57,11 @@
         result.includes("'") ? `"${result}"` : `'${result}'`,
       )
       // string[]
-      .with(P.array(P.string), () => result.join('\n'))
+      .with(P.array(P.string), () =>
+        result
+          .map((r: string) => (r.includes("'") ? `"${r}"` : `'${r}'`))
+          .join('\n'),
+      )
       // number[]
       .with(P.array(P.number), () => JSON.stringify(result))
       // string[][][]
@@ -74,7 +79,7 @@
   }
 
   onMounted(async () => {
-    const text: string = isSolved.value
+    const codeText: string = isSolved.value
       ? await (async () => {
           try {
             const response = await import(
@@ -88,8 +93,26 @@
           }
         })()
       : ''
-    sourceCode.value = formatCode(text)
+    sourceCode.value = formatCode(codeText)
     code.value = await mdCode(sourceCode.value)
+    if (Number(chapter) === 2) {
+      const testCodeText: string = isSolved.value
+        ? await (async () => {
+            try {
+              const response = await import(
+                `../chapters/${chapter}/test/ex${exercise}.test.ts?raw`
+              )
+              return response.default
+            } catch (error) {
+              console.error(`ex${exercise}.test.ts has not been implemented`)
+              return ''
+            }
+          })()
+        : ''
+      testCode.value = testCodeText
+        ? await mdCode(formatCode(testCodeText))
+        : ''
+    }
     args.value = getArguments(sourceCode.value, `ex${exercise}`)
     input.value = args.value.map((arg) => String(arg.default))
     Ex.value = isSolved.value
@@ -111,6 +134,20 @@
       />
     </VBtn>
     <div class="mt-2" v-html="code"></div>
+    <VExpansionPanels
+      v-if="Number(chapter) === 2 && testCode!.length > 0"
+      variant="accordion"
+    >
+      <VExpansionPanel
+        title="Test Code"
+        expand-icon="mdi-console-line"
+        collapse-icon="mdi-console-line"
+      >
+        <VExpansionPanelText id="test-code">
+          <div v-html="testCode"></div>
+        </VExpansionPanelText>
+      </VExpansionPanel>
+    </VExpansionPanels>
     <VRow class="py-4">
       <VCol v-if="args!.length" class="pe-0">
         <VRow>
@@ -136,20 +173,33 @@
         </VRow>
       </VCol>
       <VCol class="v-col-auto">
-        <VBtn id="run" color="primary" @click="Run">Run</VBtn>
+        <VBtn
+          color="primary"
+          :style="{ 'margin-top': (args!.length > 0 ? 10 : 0) + 'px' }"
+          @click="Run"
+        >
+          Run
+        </VBtn>
       </VCol>
     </VRow>
-    <div v-html="output"></div>
+    <div id="output" v-html="output"></div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-  .v-btn#copy {
-    position: absolute;
-    right: 0;
+  :deep() {
+    .v-btn#copy {
+      position: absolute;
+      right: 0;
+    }
+
+    .v-expansion-panel-text#test-code .v-expansion-panel-text__wrapper {
+      padding: 0;
+    }
   }
 
-  .v-btn#run {
-    margin-top: 10px;
+  #output {
+    max-height: 50vh;
+    overflow-y: auto;
   }
 </style>

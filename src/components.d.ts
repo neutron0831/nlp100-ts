@@ -10,6 +10,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppBar: typeof import('./layouts/default/AppBar.vue')['default']
+    AttachmentPanel: typeof import('./components/AttachmentPanel.vue')['default']
     ChapterList: typeof import('./components/ChapterList.vue')['default']
     CodeCard: typeof import('./components/CodeCard.vue')['default']
     Default: typeof import('./layouts/default/Default.vue')['default']

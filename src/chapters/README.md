@@ -13,18 +13,18 @@
 8. [cipher text](./01/ex08.ts)
 9. [Typoglycemia](./01/ex09.ts)
 
-## Chapter 2: UNIX Commands
+## [Chapter 2: UNIX Commands](./02)
 
-10. Line count
-11. Replace tabs into spaces
-12. col1.txt from the first column, col2.txt from the second column
-13. Merging col1.txt and col2.txt
-14. First N lines
-15. Last N lines
-16. Split a file into N pieces
-17. Distinct strings in the first column
-18. Sort lines in descending order of the third column
-19. Frequency of a string in the first column in descending order
+10. [Line count](./02/ex10.ts)
+11. [Replace tabs into spaces](./02/ex11.ts)
+12. [col1.txt from the first column, col2.txt from the second column](./02/ex12.ts)
+13. [Merging col1.txt and col2.txt](./02/ex13.ts)
+14. [First N lines](./02/ex14.ts)
+15. [Last N lines](./02/ex15.ts)
+16. [Split a file into N pieces](./02/ex16.ts)
+17. [Distinct strings in the first column](./02/ex17.ts)
+18. [Sort lines in descending order of the third column](./02/ex18.ts)
+19. [Frequency of a string in the first column in descending order](./02/ex19.ts)
 
 ## Chapter 3: Regular Expression
 
