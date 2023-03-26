@@ -22,7 +22,7 @@ Join the contents of `col1.txt` and `col2.txt`, and create a text file whose eac
 
 Receive a natural number $N$ from a command-line argument, and output the first $N$ lines of the file. Confirm the result by using `head` command.
 
-## 15. Last N lines
+## 15. [Last N lines](./ex15.ts)
 
 Receive a natural number $N$ from a command-line argument, and output the last $N$ lines of the file. Confirm the result by using `tail` command.
 
