@@ -24,7 +24,7 @@
 16. [Split a file into N pieces](./02/ex16.ts)
 17. [Distinct strings in the first column](./02/ex17.ts)
 18. [Sort lines in descending order of the third column](./02/ex18.ts)
-19. Frequency of a string in the first column in descending order
+19. [Frequency of a string in the first column in descending order](./02/ex19.ts)
 
 ## Chapter 3: Regular Expression
 

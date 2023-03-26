@@ -38,6 +38,6 @@ Find distinct strings (a set of strings) of the first column of the file. Confir
 
 Sort the lines in descending numeric order of the third column (sort lines without changing the content of each line). Confirm the result by using `sort` command.
 
-## 19. Frequency of a string in the first column in descending order
+## 19. [Frequency of a string in the first column in descending order](./ex19.ts)
 
 Find the frequency of a string in the first column, and sort the strings by descending order of their frequencies. Confirm the result by using `cut`, `uniq`, and `sort` commands.
