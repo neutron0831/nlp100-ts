@@ -18,7 +18,7 @@ Extract the value of the first column of each line, and store the output into `c
 
 Join the contents of `col1.txt` and `col2.txt`, and create a text file whose each line contains the values of the first and second columns (separated by tab character) of the original file. Confirm the result by using `paste` command.
 
-## 14. First N lines
+## 14. [First N lines](./ex14.ts)
 
 Receive a natural number $N$ from a command-line argument, and output the first $N$ lines of the file. Confirm the result by using `head` command.
 
