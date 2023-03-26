@@ -35,6 +35,19 @@
     }
   }
 
+  async function copyLinkToClipboard(exercise: number) {
+    try {
+      await router.push({
+        name: 'Chapter',
+        params: { chapter: route.params.chapter },
+        hash: `#${exercise}`,
+      })
+      await navigator.clipboard.writeText(location.href)
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
   onMounted(() => {
     invertImg()
     scrollToExercise()
@@ -61,7 +74,16 @@
       :dot-color="exercise.state === 'open' ? 'grey' : 'primary'"
       size="x-small"
     >
-      <div :id="`ex${exercise.number}`" v-html="exercise.body"></div>
+      <h2 :id="`ex${exercise.number}`">
+        {{ exercise.title }}
+        <VBtn
+          density="compact"
+          icon="mdi-link"
+          variant="text"
+          @click="copyLinkToClipboard(exercise.number)"
+        />
+      </h2>
+      <div v-html="exercise.body.split(/<h2>.+<\/h2>\n/).slice(1)[0]"></div>
       <CodeCard :number="exercise.number" :state="exercise.state" />
     </VTimelineItem>
   </VTimeline>
