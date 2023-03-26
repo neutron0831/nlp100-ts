@@ -34,7 +34,7 @@ Receive a natural number $N$ from a command-line argument, and split the input f
 
 Find distinct strings (a set of strings) of the first column of the file. Confirm the result by using `cut`, `sort`, and `uniq` commands.
 
-## 18. Sort lines in descending order of the third column
+## 18. [Sort lines in descending order of the third column](./ex18.ts)
 
 Sort the lines in descending numeric order of the third column (sort lines without changing the content of each line). Confirm the result by using `sort` command.
 
