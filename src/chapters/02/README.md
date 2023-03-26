@@ -26,7 +26,7 @@ Receive a natural number $N$ from a command-line argument, and output the first 
 
 Receive a natural number $N$ from a command-line argument, and output the last $N$ lines of the file. Confirm the result by using `tail` command.
 
-## 16. Split a file into N pieces
+## 16. [Split a file into N pieces](./ex16.ts)
 
 Receive a natural number $N$ from a command-line argument, and split the input file into $N$ pieces at line boundaries. Confirm the result by using `split` command.
 
