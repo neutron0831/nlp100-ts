@@ -10,7 +10,7 @@ The file [enwiki-country.json.gz](../../assets/enwiki-country.json.gz) stores Wi
 
 Write codes that perform the following jobs.
 
-## 20. Read JSON documents
+## 20. [Read JSON documents](./ex20.ts)
 
 Read the JSON documents and output the body of the article about the United Kingdom. Reuse the output in problems 21-29.
 
