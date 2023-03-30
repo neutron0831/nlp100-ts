@@ -1,5 +1,5 @@
 // See [Explicit URL Imports](https://vitejs.dev/guide/assets.html#explicit-url-imports)
-import popularNames from '@/assets/popular-names.txt'
+import popularNames from '@/assets/popular-names.txt?url'
 import { execSync } from 'node:child_process'
 import { ex10 } from '@/chapters/02/ex10'
 
