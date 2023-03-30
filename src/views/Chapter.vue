@@ -36,8 +36,8 @@
       <VCardTitle class="text-h5">{{ title }}</VCardTitle>
       <!-- eslint-disable-next-line vue/no-v-text-v-html-on-component -->
       <VCardText v-if="description.length" v-html="description" />
-      <VCardText v-if="number === 2">
-        <AttachmentPanel />
+      <VCardText v-if="[2, 3].includes(number)">
+        <AttachmentPanel :chapter="number" />
       </VCardText>
     </VCard>
     <Exercises :exercises="exercises" />
