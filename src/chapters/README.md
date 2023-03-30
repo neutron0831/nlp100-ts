@@ -26,7 +26,7 @@
 18. [Sort lines in descending order of the third column](./02/ex18.ts)
 19. [Frequency of a string in the first column in descending order](./02/ex19.ts)
 
-## Chapter 3: Regular Expression
+## [Chapter 3: Regular Expression](./03)
 
 20. Read JSON documents
 21. Lines with category names
