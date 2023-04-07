@@ -9,13 +9,16 @@
   "license": "MIT",
   "author": "NEUTRON <neutron0831@gmail.com> (https://github.com/neutron0831)",
   "homepage": "https://nlp100-ts.netlify.app",
+  "config": {
+    "MAX_OLD_SPACE_SIZE": "--max-old-space-size=6144"
+  },
   "scripts": {
     "postinstall": "husky install && chmod +x .husky/*",
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build --target esnext",
     "preview": "vite preview",
-    "test": "vitest --silent",
-    "test:ch": "vitest src/chapters/$ch/test",
+    "test": "NODE_OPTIONS=$npm_package_config_MAX_OLD_SPACE_SIZE vitest --silent",
+    "test:ch": "NODE_OPTIONS=$npm_package_config_MAX_OLD_SPACE_SIZE vitest src/chapters/$ch/test",
     "lint": "eslint --ext .js,.ts,.vue --fix --no-error-on-unmatched-pattern src",
     "format": "prettier --write --ignore-unknown --no-error-on-unmatched-pattern src",
     "commitmsg": "commitlint --config .commitlintrc.js --edit $GIT_PARAMS",
@@ -60,6 +63,7 @@
     "@vitejs/plugin-vue": "^3.0.3",
     "@vue/eslint-config-typescript": "^11.0.0",
     "commitlint": "^17.4.4",
+    "cross-env": "^7.0.3",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-vue": "^9.3.0",

@@ -38,4 +38,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Test
+        env:
+          NODE_OPTIONS: --max_old_space_size=6144
         run: pnpm test
