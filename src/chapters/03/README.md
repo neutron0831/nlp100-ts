@@ -18,7 +18,7 @@ Read the JSON documents and output the body of the article about the United King
 
 Extract lines that define the categories of the article.
 
-## 22. Category names
+## 22. [Category names](./ex22.ts)
 
 Extract the category names of the article.
 

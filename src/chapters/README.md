@@ -30,7 +30,7 @@
 
 20. [Read JSON documents](./03/ex20.ts)
 21. [Lines with category names](./03/ex21.ts)
-22. Category names
+22. [Category names](./03/ex22.ts)
 23. Section structure
 24. Media references
 25. Infobox
