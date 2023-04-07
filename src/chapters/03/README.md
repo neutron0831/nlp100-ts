@@ -14,7 +14,7 @@ Write codes that perform the following jobs.
 
 Read the JSON documents and output the body of the article about the United Kingdom. Reuse the output in problems 21-29.
 
-## 21. Lines with category names
+## 21. [Lines with category names](./ex21.ts)
 
 Extract lines that define the categories of the article.
 

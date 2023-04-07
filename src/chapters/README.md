@@ -29,7 +29,7 @@
 ## [Chapter 3: Regular Expression](./03)
 
 20. [Read JSON documents](./03/ex20.ts)
-21. Lines with category names
+21. [Lines with category names](./03/ex21.ts)
 22. Category names
 23. Section structure
 24. Media references
