@@ -31,7 +31,7 @@
 20. [Read JSON documents](./03/ex20.ts)
 21. [Lines with category names](./03/ex21.ts)
 22. [Category names](./03/ex22.ts)
-23. Section structure
+23. [Section structure](./03/ex23.ts)
 24. Media references
 25. Infobox
 26. Remove emphasis markups

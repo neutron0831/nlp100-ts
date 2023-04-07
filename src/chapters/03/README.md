@@ -22,7 +22,7 @@ Extract lines that define the categories of the article.
 
 Extract the category names of the article.
 
-## 23. Section structure
+## 23. [Section structure](./ex23.ts)
 
 Extract section names in the article with their levels. For example, the level of the section is 1 for the MediaWiki markup `"== Section name =="`.
 
