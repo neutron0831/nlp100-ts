@@ -32,7 +32,7 @@
 21. [Lines with category names](./03/ex21.ts)
 22. [Category names](./03/ex22.ts)
 23. [Section structure](./03/ex23.ts)
-24. Media references
+24. [Media references](./03/ex24.ts)
 25. Infobox
 26. Remove emphasis markups
 27. Remove internal links

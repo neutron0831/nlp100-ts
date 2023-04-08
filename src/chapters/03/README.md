@@ -26,7 +26,7 @@ Extract the category names of the article.
 
 Extract section names in the article with their levels. For example, the level of the section is 1 for the MediaWiki markup `"== Section name =="`.
 
-## 24. Media references
+## 24. [Media references](./ex24.ts)
 
 Extract references to media files linked from the article.
 
