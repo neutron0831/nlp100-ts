@@ -30,7 +30,7 @@ Extract section names in the article with their levels. For example, the level o
 
 Extract references to media files linked from the article.
 
-## 25. Infobox
+## 25. [Infobox](./ex25.ts)
 
 Extract field names and their values in the Infobox "country", and store them in a dictionary object.
 

@@ -33,7 +33,7 @@
 22. [Category names](./03/ex22.ts)
 23. [Section structure](./03/ex23.ts)
 24. [Media references](./03/ex24.ts)
-25. Infobox
+25. [Infobox](./03/ex25.ts)
 26. Remove emphasis markups
 27. Remove internal links
 28. Remove MediaWiki markups
