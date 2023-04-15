@@ -35,7 +35,7 @@
 24. [Media references](./03/ex24.ts)
 25. [Infobox](./03/ex25.ts)
 26. [Remove emphasis markups](./03/ex26.ts)
-27. Remove internal links
+27. [Remove internal links](./03/ex27.ts)
 28. Remove MediaWiki markups
 29. Country flag
 

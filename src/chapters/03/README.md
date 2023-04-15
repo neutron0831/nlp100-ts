@@ -38,7 +38,7 @@ Extract field names and their values in the Infobox "country", and store them in
 
 In addition to the process of the problem 25, remove emphasis MediaWiki markups from the values. See [Help:Cheatsheet](https://en.wikipedia.org/wiki/Help:Cheatsheet).
 
-## 27. Remove internal links
+## 27. [Remove internal links](./ex27.ts)
 
 In addition to the process of the problem 26, remove internal links from the values. See [Help:Cheatsheet](https://en.wikipedia.org/wiki/Help:Cheatsheet).
 
