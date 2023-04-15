@@ -34,7 +34,7 @@ Extract references to media files linked from the article.
 
 Extract field names and their values in the Infobox "country", and store them in a dictionary object.
 
-## 26. Remove emphasis markups
+## 26. [Remove emphasis markups](./ex26.ts)
 
 In addition to the process of the problem 25, remove emphasis MediaWiki markups from the values. See [Help:Cheatsheet](https://en.wikipedia.org/wiki/Help:Cheatsheet).
 
