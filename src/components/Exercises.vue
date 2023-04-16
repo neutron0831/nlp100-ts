@@ -21,11 +21,15 @@
     const id = route.hash
     if (route.hash) {
       const number = Number(id.slice(1))
+      const { state } = props.exercises[number % 10]
       if (props.exercises.some((exercises) => exercises.number === number)) {
-        let exercise
         const searchExercise = setInterval(() => {
-          exercise = document.getElementById(`ex${number}`)
-          if (exercise) {
+          const exercise = document.getElementById(`ex${number}`)
+          if (
+            exercise &&
+            exercise.parentElement!.children.length >=
+              (state === 'open' ? 2 : 3)
+          ) {
             const y = exercise.getBoundingClientRect().top + scrollY - 60
             scrollTo({ top: y, behavior: 'smooth' })
             clearInterval(searchExercise)
