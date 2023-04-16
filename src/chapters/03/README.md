@@ -42,7 +42,7 @@ In addition to the process of the problem 25, remove emphasis MediaWiki markups 
 
 In addition to the process of the problem 26, remove internal links from the values. See [Help:Cheatsheet](https://en.wikipedia.org/wiki/Help:Cheatsheet).
 
-## 28. Remove MediaWiki markups
+## 28. [Remove MediaWiki markups](./ex28.ts)
 
 In addition to the process of the problem 27, remove MediaWiki markups from the values as much as you can, and obtain the basic information of the country in plain text format.
 
