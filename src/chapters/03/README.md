@@ -46,6 +46,6 @@ In addition to the process of the problem 26, remove internal links from the val
 
 In addition to the process of the problem 27, remove MediaWiki markups from the values as much as you can, and obtain the basic information of the country in plain text format.
 
-## 29. Country flag
+## 29. [Country flag](./ex29.ts)
 
 Obtain the URL of the country flag by using the analysis result of Infobox. (Hint: convert a file reference to a URL by calling [imageinfo](https://www.mediawiki.org/wiki/API:Imageinfo) in [MediaWiki API](https://www.mediawiki.org/wiki/API:Main_page))

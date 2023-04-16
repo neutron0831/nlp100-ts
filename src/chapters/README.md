@@ -37,7 +37,7 @@
 26. [Remove emphasis markups](./03/ex26.ts)
 27. [Remove internal links](./03/ex27.ts)
 28. [Remove MediaWiki markups](./03/ex28.ts)
-29. Country flag
+29. [Country flag](./03/ex29.ts)
 
 ## Chapter 4: POS tagging
 
