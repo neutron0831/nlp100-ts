@@ -3,12 +3,14 @@
 
   const props = defineProps<{
     exercises: Exercise[]
+    maxWidth: number
   }>()
 
   const theme = useTheme()
   const route = useRoute()
 
   const dark = computed(() => theme.global.current.value.dark)
+  const cordCardMaxWidth = computed(() => `${props.maxWidth}px`)
 
   function invertImg() {
     if (route.params.chapter === '5') {
@@ -114,6 +116,10 @@
 
     .v-timeline-item__body {
       width: 100%;
+
+      @media only screen and (min-width: 960px) {
+        max-width: v-bind(cordCardMaxWidth);
+      }
     }
 
     .v-timeline-divider__dot {
