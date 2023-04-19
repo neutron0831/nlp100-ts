@@ -26,18 +26,18 @@
 18. [Sort lines in descending order of the third column](./02/ex18.ts)
 19. [Frequency of a string in the first column in descending order](./02/ex19.ts)
 
-## Chapter 3: Regular Expression
+## [Chapter 3: Regular Expression](./03)
 
-20. Read JSON documents
-21. Lines with category names
-22. Category names
-23. Section structure
-24. Media references
-25. Infobox
-26. Remove emphasis markups
-27. Remove internal links
-28. Remove MediaWiki markups
-29. Country flag
+20. [Read JSON documents](./03/ex20.ts)
+21. [Lines with category names](./03/ex21.ts)
+22. [Category names](./03/ex22.ts)
+23. [Section structure](./03/ex23.ts)
+24. [Media references](./03/ex24.ts)
+25. [Infobox](./03/ex25.ts)
+26. [Remove emphasis markups](./03/ex26.ts)
+27. [Remove internal links](./03/ex27.ts)
+28. [Remove MediaWiki markups](./03/ex28.ts)
+29. [Country flag](./03/ex29.ts)
 
 ## Chapter 4: POS tagging
 

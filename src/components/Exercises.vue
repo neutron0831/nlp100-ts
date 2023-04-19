@@ -3,12 +3,14 @@
 
   const props = defineProps<{
     exercises: Exercise[]
+    maxWidth: number
   }>()
 
   const theme = useTheme()
   const route = useRoute()
 
   const dark = computed(() => theme.global.current.value.dark)
+  const cordCardMaxWidth = computed(() => `${props.maxWidth}px`)
 
   function invertImg() {
     if (route.params.chapter === '5') {
@@ -21,11 +23,15 @@
     const id = route.hash
     if (route.hash) {
       const number = Number(id.slice(1))
+      const { state } = props.exercises[number % 10]
       if (props.exercises.some((exercises) => exercises.number === number)) {
-        let exercise
         const searchExercise = setInterval(() => {
-          exercise = document.getElementById(`ex${number}`)
-          if (exercise) {
+          const exercise = document.getElementById(`ex${number}`)
+          if (
+            exercise &&
+            exercise.parentElement!.children.length >=
+              (state === 'open' ? 2 : 3)
+          ) {
             const y = exercise.getBoundingClientRect().top + scrollY - 60
             scrollTo({ top: y, behavior: 'smooth' })
             clearInterval(searchExercise)
@@ -110,6 +116,10 @@
 
     .v-timeline-item__body {
       width: 100%;
+
+      @media only screen and (min-width: 960px) {
+        max-width: v-bind(cordCardMaxWidth);
+      }
     }
 
     .v-timeline-divider__dot {

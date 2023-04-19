@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import gzipImport from './src/plugins/gzip-import'
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -45,6 +46,7 @@ export default defineConfig({
       dirs: ['src/components', 'src/layouts'],
       dts: 'src/components.d.ts',
     }),
+    gzipImport(),
   ],
   define: { 'process.env': {} },
   resolve: {

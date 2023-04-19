@@ -1,5 +1,50 @@
 # Changelog
 
+<a name="0.3.0"></a>
+## [v0.3.0](https://github.com/neutron0831/nlp100-ts/compare/v0.2.0...v0.3.0) (2023-04-19)
+
+### Added
+
+- 👷‍♂️ Run `test.yml` only for untested tests [[82a2fa9](https://github.com/neutron0831/nlp100-ts/commit/82a2fa9)]
+- ✅ Add Exercise 29 test ([#29](https://github.com/neutron0831/nlp100-ts/issues/29)) [[23a5be3](https://github.com/neutron0831/nlp100-ts/commit/23a5be3)]
+- ✨ Add Exercise 29 ([#29](https://github.com/neutron0831/nlp100-ts/issues/29)) [[3fd8fc1](https://github.com/neutron0831/nlp100-ts/commit/3fd8fc1)]
+- ✅ Add Exercise 28 test ([#28](https://github.com/neutron0831/nlp100-ts/issues/28)) [[3c48f58](https://github.com/neutron0831/nlp100-ts/commit/3c48f58)]
+- ✨ Add Exercise 28 ([#28](https://github.com/neutron0831/nlp100-ts/issues/28)) [[ab7468e](https://github.com/neutron0831/nlp100-ts/commit/ab7468e)]
+- ✅ Add Exercise 27 test ([#27](https://github.com/neutron0831/nlp100-ts/issues/27)) [[c4ad8bc](https://github.com/neutron0831/nlp100-ts/commit/c4ad8bc)]
+- ✨ Add Exercise 27 ([#27](https://github.com/neutron0831/nlp100-ts/issues/27)) [[f7812cc](https://github.com/neutron0831/nlp100-ts/commit/f7812cc)]
+- ✅ Add Exercise 26 test ([#26](https://github.com/neutron0831/nlp100-ts/issues/26)) [[56ae4d9](https://github.com/neutron0831/nlp100-ts/commit/56ae4d9)]
+- ✨ Add Exercise 26 ([#26](https://github.com/neutron0831/nlp100-ts/issues/26)) [[f0cd6de](https://github.com/neutron0831/nlp100-ts/commit/f0cd6de)]
+- ✅ Add Exercise 25 test ([#25](https://github.com/neutron0831/nlp100-ts/issues/25)) [[62a0ccc](https://github.com/neutron0831/nlp100-ts/commit/62a0ccc)]
+- ✨ Add Exercise 25 ([#25](https://github.com/neutron0831/nlp100-ts/issues/25)) [[cd9d727](https://github.com/neutron0831/nlp100-ts/commit/cd9d727)]
+- ✅ Add Exercise 24 test ([#24](https://github.com/neutron0831/nlp100-ts/issues/24)) [[c87677a](https://github.com/neutron0831/nlp100-ts/commit/c87677a)]
+- ✨ Add Exercise 24 ([#24](https://github.com/neutron0831/nlp100-ts/issues/24)) [[5cae007](https://github.com/neutron0831/nlp100-ts/commit/5cae007)]
+- ✅ Add Exercise 23 test ([#23](https://github.com/neutron0831/nlp100-ts/issues/23)) [[c49d1c1](https://github.com/neutron0831/nlp100-ts/commit/c49d1c1)]
+- ✨ Add Exercise 23 ([#23](https://github.com/neutron0831/nlp100-ts/issues/23)) [[3622d9c](https://github.com/neutron0831/nlp100-ts/commit/3622d9c)]
+- ✅ Add Exercise 22 test ([#22](https://github.com/neutron0831/nlp100-ts/issues/22)) [[64df6f2](https://github.com/neutron0831/nlp100-ts/commit/64df6f2)]
+- ✨ Add Exercise 22 ([#22](https://github.com/neutron0831/nlp100-ts/issues/22)) [[6a873b3](https://github.com/neutron0831/nlp100-ts/commit/6a873b3)]
+- ✅ Add Exercise 21 test ([#21](https://github.com/neutron0831/nlp100-ts/issues/21)) [[d967eed](https://github.com/neutron0831/nlp100-ts/commit/d967eed)]
+- ✨ Add Exercise 21 ([#21](https://github.com/neutron0831/nlp100-ts/issues/21)) [[908322f](https://github.com/neutron0831/nlp100-ts/commit/908322f)]
+- ✅ Add Exercise 20 test ([#20](https://github.com/neutron0831/nlp100-ts/issues/20)) [[714ba20](https://github.com/neutron0831/nlp100-ts/commit/714ba20)]
+- ✨ Add Exercise 20 ([#20](https://github.com/neutron0831/nlp100-ts/issues/20)) [[99f7ac9](https://github.com/neutron0831/nlp100-ts/commit/99f7ac9)]
+- ✨ Update `AttachmentPanel.vue` [[0bc47ad](https://github.com/neutron0831/nlp100-ts/commit/0bc47ad)]
+
+### Changed
+
+- 📱 Wrap words when the output is long [[85e3e48](https://github.com/neutron0831/nlp100-ts/commit/85e3e48)]
+- 🚸 Scroll to exercises after rendering [[7d1f15a](https://github.com/neutron0831/nlp100-ts/commit/7d1f15a)]
+- 🍱 Add `enwiki-country.json.gz` [[72bde9e](https://github.com/neutron0831/nlp100-ts/commit/72bde9e)]
+- 👽 Update `pnpm-lock.yaml` [[88373fd](https://github.com/neutron0831/nlp100-ts/commit/88373fd)]
+
+### Fixed
+
+- 🚑 Update a personal access token [[5abb560](https://github.com/neutron0831/nlp100-ts/commit/5abb560)]
+
+### Miscellaneous
+
+- 📝 Add `README.md` of Chapter 3 [[e688799](https://github.com/neutron0831/nlp100-ts/commit/e688799)]
+- 🩹 Add `?url` suffix [[3ff2c0a](https://github.com/neutron0831/nlp100-ts/commit/3ff2c0a)]
+
+
 <a name="0.2.0"></a>
 ## [v0.2.0](https://github.com/neutron0831/nlp100-ts/compare/v0.1.1...v0.2.0) (2023-03-26)
 
