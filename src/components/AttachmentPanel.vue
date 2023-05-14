@@ -62,6 +62,30 @@
         },
       ],
     },
+    4: {
+      title: 'alice.txt.conll',
+      itemKey: 'text',
+      headers: [
+        {
+          title: 'Text',
+          align: 'start',
+          sortable: true,
+          key: 'text',
+        },
+        {
+          title: 'Lemma',
+          align: 'start',
+          sortable: false,
+          key: 'lemma',
+        },
+        {
+          title: 'POS',
+          align: 'start',
+          sortable: false,
+          key: 'pos',
+        },
+      ],
+    },
   })
   const attachment = computed(() => attachments[props.chapter])
   const items = ref<any[]>()
@@ -71,7 +95,11 @@
     const ext = extname(title)
     const file = basename(title, ext)
     let { default: text } = await import(
-      ext === '.txt' ? `@/assets/${file}.txt?raw` : `@/assets/${file}.gz?raw`
+      ext === '.txt'
+        ? `@/assets/${file}.txt?raw`
+        : ext === '.conll'
+        ? `@/assets/${file}.conll?raw`
+        : `@/assets/${file}.gz?raw`
     )
     text = text.trim()
 
@@ -80,13 +108,25 @@
         headers.map((header) => header.key).join('\t') + '\n' + text,
         {
           header: true,
-          transformHeader: undefined,
           dynamicTyping: true,
           skipEmptyLines: true,
         },
       ).data
     } else if (chapter === 3) {
       items.value = text.split('\n').map((line: string) => JSON.parse(line))
+    } else if (chapter === 4) {
+      items.value = Papa.parse(text, {
+        header: true,
+        dynamicTyping: true,
+        skipEmptyLines: true,
+        beforeFirstChunk: (chunk) =>
+          headers.map((header) => header.key).join('\t') +
+          '\n' +
+          chunk
+            .split('\n')
+            .map((row) => row.split('\t').slice(1, -3).join('\t'))
+            .join('\n'),
+      }).data
     }
   }
 
