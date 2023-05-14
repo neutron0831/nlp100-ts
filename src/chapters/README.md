@@ -39,7 +39,7 @@
 28. [Remove MediaWiki markups](./03/ex28.ts)
 29. [Country flag](./03/ex29.ts)
 
-## Chapter 4: POS tagging
+## [Chapter 4: POS tagging](./04)
 
 30. Reading the result
 31. Verbs
