@@ -49,7 +49,7 @@
 
     const parseResult: string = match<
       | string
-      | (string | number | string[][] | (boolean | string[][]))[]
+      | (string | number | object[] | string[][] | (boolean | string[][]))[]
       | object
     >(result)
       // string
@@ -64,6 +64,18 @@
       )
       // number[]
       .with(P.array(P.number), () => JSON.stringify(result))
+      // object[][]
+      .with(
+        P.array(P.array(P.any)),
+        () =>
+          '[\n  [\n' +
+          result
+            .map((r: object[]) =>
+              r.map((m: object) => '    ' + JSON.stringify(m)).join(',\n'),
+            )
+            .join('\n  ], [\n') +
+          '  ]\n\n]',
+      )
       // string[][][]
       .with(P.array(P.array(P.array(P.string))), () =>
         result.map((r: string[]) => JSON.stringify(r)).join('\n'),

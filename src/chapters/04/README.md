@@ -4,7 +4,7 @@ The zip archive [alice.zip](https://nlp100.github.io/data/alice.zip) contains th
 
 For your convenience, the zip archive also includes `alice.txt.conll`, the novel with part-of-speech labels predicted by [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/). It may be a good idea to use [matplotlib](http://matplotlib.org/) or [Gnuplot](http://www.gnuplot.info/) for the problems 37, 38, and 39.
 
-## 30. Reading the result
+## 30. [Reading the result](./ex30.ts)
 
 Implement a program that reads the result of part-of-speech tagging. Here, represent a sentence as a list of mapping objects, each of which associates a surface form, lemma (base form), part-of-speech tag with the keys `text`, `lemma`, `pos`. Use this representation in the rest of the problems.
 
