@@ -8,7 +8,7 @@ For your convenience, the zip archive also includes `alice.txt.conll`, the novel
 
 Implement a program that reads the result of part-of-speech tagging. Here, represent a sentence as a list of mapping objects, each of which associates a surface form, lemma (base form), part-of-speech tag with the keys `text`, `lemma`, `pos`. Use this representation in the rest of the problems.
 
-## 31. Verbs
+## 31. [Verbs](./ex31.ts)
 
 Extract surface forms of all verbs appearing in the text.
 

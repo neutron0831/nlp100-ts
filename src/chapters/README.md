@@ -42,7 +42,7 @@
 ## [Chapter 4: POS tagging](./04)
 
 30. [Reading the result](./04/ex30.ts)
-31. Verbs
+31. [Verbs](./04/ex31.ts)
 32. Base forms of verbs
 33. A of B
 34. A B
