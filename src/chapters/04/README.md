@@ -12,7 +12,7 @@ Implement a program that reads the result of part-of-speech tagging. Here, repre
 
 Extract surface forms of all verbs appearing in the text.
 
-## 32. Base forms of verbs
+## 32. [Base forms of verbs](./ex32.ts)
 
 Extract lemmas of all verbs appearing in the text.
 

@@ -43,7 +43,7 @@
 
 30. [Reading the result](./04/ex30.ts)
 31. [Verbs](./04/ex31.ts)
-32. Base forms of verbs
+32. [Base forms of verbs](./04/ex32.ts)
 33. A of B
 34. A B
 35. Frequency of words
