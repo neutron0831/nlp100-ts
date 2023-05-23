@@ -16,7 +16,7 @@ Extract surface forms of all verbs appearing in the text.
 
 Extract lemmas of all verbs appearing in the text.
 
-## 33. A of B
+## 33. [A of B](./ex33.ts)
 
 Extract noun phrases in the form of "A of B", where A and B are nouns.
 
