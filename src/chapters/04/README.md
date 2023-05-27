@@ -28,7 +28,7 @@ Extract the longest noun phrase consisting of consecutive nouns.
 
 Obtain the list of words and frequencies of their occurrences sorted by descending order of frequency.
 
-## 36. Top-ten frequent words
+## 36. [Top-ten frequent words](./ex36.ts)
 
 Visualize the top-ten frequent words and their frequencies with a chart (e.g., bar chart).
 

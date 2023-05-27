@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+  import Chart, { ChartConfiguration } from 'chart.js/auto'
   import { match, P } from 'ts-pattern'
   import MDParser from '@/utils/md-parser'
   import { Argument, formatCode, getArguments } from '@/utils/source-code'
@@ -21,6 +22,19 @@
   const input = ref<string[]>()
   const output = ref(await mdCode('// output'))
   const Ex = ref()
+  const isChartEx = computed(() => [36].includes(props.number))
+  const canvas = computed<HTMLCanvasElement | null>(() =>
+    document.querySelector(`canvas#ex${props.number}`),
+  )
+  const chart = computed(() =>
+    canvas.value
+      ? new Chart(canvas.value, {
+          type: 'bar',
+          data: { labels: [], datasets: [] },
+          options: {},
+        })
+      : null,
+  )
 
   async function copyToClipboard() {
     try {
@@ -37,6 +51,11 @@
   }
 
   async function Run() {
+    if (isChartEx.value) {
+      await Ex.value[`ex${exercise}`](chart.value)
+      return
+    }
+
     const result = Ex.value
       ? await Ex.value[`ex${exercise}`](
           ...input.value!.map((value, i) =>
@@ -130,6 +149,10 @@
     Ex.value = isSolved.value
       ? await await import(`../chapters/${chapter}/ex${exercise}.ts`)
       : undefined
+    if (isChartEx.value) {
+      Chart.defaults.borderColor = '#75715E'
+      Chart.defaults.color = '#F8F8F2'
+    }
   })
 </script>
 
@@ -194,7 +217,8 @@
         </VBtn>
       </VCol>
     </VRow>
-    <div id="output" v-html="output"></div>
+    <canvas v-if="isChartEx" :id="`ex${number}`"></canvas>
+    <div v-else id="output" v-html="output"></div>
   </div>
 </template>
 
@@ -208,6 +232,12 @@
     .v-expansion-panel-text#test-code .v-expansion-panel-text__wrapper {
       padding: 0;
     }
+  }
+
+  canvas {
+    width: 100%;
+    height: 56px;
+    background-color: #23241f;
   }
 
   #output {
