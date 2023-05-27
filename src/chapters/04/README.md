@@ -20,7 +20,7 @@ Extract lemmas of all verbs appearing in the text.
 
 Extract noun phrases in the form of "A of B", where A and B are nouns.
 
-## 34. A B
+## 34. [A B](./ex34.ts)
 
 Extract the longest noun phrase consisting of consecutive nouns.
 

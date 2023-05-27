@@ -45,7 +45,7 @@
 31. [Verbs](./04/ex31.ts)
 32. [Base forms of verbs](./04/ex32.ts)
 33. [A of B](./04/ex33.ts)
-34. A B
+34. [A B](./04/ex34.ts)
 35. Frequency of words
 36. Top-ten frequent words
 37. Top-ten words co-occurring with ‘Alice’
