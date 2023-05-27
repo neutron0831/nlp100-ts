@@ -24,7 +24,7 @@ Extract noun phrases in the form of "A of B", where A and B are nouns.
 
 Extract the longest noun phrase consisting of consecutive nouns.
 
-## 35. Frequency of words
+## 35. [Frequency of words](./ex35.ts)
 
 Obtain the list of words and frequencies of their occurrences sorted by descending order of frequency.
 
