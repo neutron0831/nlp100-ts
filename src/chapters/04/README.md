@@ -32,7 +32,7 @@ Obtain the list of words and frequencies of their occurrences sorted by descendi
 
 Visualize the top-ten frequent words and their frequencies with a chart (e.g., bar chart).
 
-## 37. Top-ten words co-occurring with 'Alice'
+## 37. [Top-ten words co-occurring with 'Alice'](./ex37.ts)
 
 Extract the list of words that co-occur with the word "Alice". Visualize with a chart (e.g., bar chart) the top-ten words co-occurring with the word "Alice" and their frequencies.
 

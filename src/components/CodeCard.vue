@@ -22,7 +22,7 @@
   const input = ref<string[]>()
   const output = ref(await mdCode('// output'))
   const Ex = ref()
-  const isChartEx = computed(() => [36].includes(props.number))
+  const isChartEx = computed(() => [36, 37].includes(props.number))
   const canvas = computed<HTMLCanvasElement | null>(() =>
     document.querySelector(`canvas#ex${props.number}`),
   )

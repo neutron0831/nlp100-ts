@@ -48,7 +48,7 @@
 34. [A B](./04/ex34.ts)
 35. [Frequency of words](./04/ex35.ts)
 36. [Top-ten frequent words](./04/ex36.ts)
-37. Top-ten words co-occurring with ‘Alice’
+37. [Top-ten words co-occurring with ‘Alice’](./04/ex37.ts)
 38. Histogram
 39. Zipf’s law
 
