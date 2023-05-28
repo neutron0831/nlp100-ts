@@ -1,5 +1,6 @@
 <script lang="ts" setup>
   import Chart from 'chart.js/auto'
+  import type { ChartType } from 'chart.js/auto'
   import { match, P } from 'ts-pattern'
   import MDParser from '@/utils/md-parser'
   import { Argument, formatCode, getArguments } from '@/utils/source-code'
@@ -22,14 +23,22 @@
   const input = ref<string[]>()
   const output = ref(await mdCode('// output'))
   const Ex = ref()
-  const isChartEx = computed(() => [36, 37, 38].includes(props.number))
+  const chartType: { [exercise: number]: ChartType } = {
+    36: 'bar',
+    37: 'bar',
+    38: 'bar',
+    39: 'scatter',
+  }
+  const isChartEx = computed(() =>
+    Object.keys(chartType).map(Number).includes(props.number),
+  )
   const canvas = computed<HTMLCanvasElement | null>(() =>
     document.querySelector(`canvas#ex${props.number}`),
   )
   const chart = computed(() =>
     canvas.value
       ? new Chart(canvas.value, {
-          type: 'bar',
+          type: chartType[props.number],
           data: { labels: [], datasets: [] },
           options: {},
         })

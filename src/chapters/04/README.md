@@ -40,6 +40,6 @@ Extract the list of words that co-occur with the word "Alice". Visualize with a 
 
 Draw a histogram of word frequency (x-axis is a scalar range representing a frequency ranging from 1 to the largest frequency of a given word in the entire corpus, and the y-axis is the count of unique words that fall into the count of the x value).
 
-## 39. Zipf's law
+## 39. [Zipf's law](./ex39.ts)
 
 Plot a log-log graph with the x-axis being rank order and the y-axis being frequency.
