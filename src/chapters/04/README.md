@@ -36,7 +36,7 @@ Visualize the top-ten frequent words and their frequencies with a chart (e.g., b
 
 Extract the list of words that co-occur with the word "Alice". Visualize with a chart (e.g., bar chart) the top-ten words co-occurring with the word "Alice" and their frequencies.
 
-## 38. Histogram
+## 38. [Histogram](./ex38.ts)
 
 Draw a histogram of word frequency (x-axis is a scalar range representing a frequency ranging from 1 to the largest frequency of a given word in the entire corpus, and the y-axis is the count of unique words that fall into the count of the x value).
 

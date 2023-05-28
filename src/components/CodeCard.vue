@@ -22,7 +22,7 @@
   const input = ref<string[]>()
   const output = ref(await mdCode('// output'))
   const Ex = ref()
-  const isChartEx = computed(() => [36, 37].includes(props.number))
+  const isChartEx = computed(() => [36, 37, 38].includes(props.number))
   const canvas = computed<HTMLCanvasElement | null>(() =>
     document.querySelector(`canvas#ex${props.number}`),
   )
@@ -52,7 +52,14 @@
 
   async function Run() {
     if (isChartEx.value) {
-      await Ex.value[`ex${exercise}`](chart.value)
+      await Ex.value[`ex${exercise}`](
+        chart.value,
+        ...input.value!.map((value, i) =>
+          args.value![i].type === 'number'
+            ? Number(value || undefined)
+            : value || undefined,
+        ),
+      )
       return
     }
 

@@ -49,7 +49,7 @@
 35. [Frequency of words](./04/ex35.ts)
 36. [Top-ten frequent words](./04/ex36.ts)
 37. [Top-ten words co-occurring with ‘Alice’](./04/ex37.ts)
-38. Histogram
+38. [Histogram](./04/ex38.ts)
 39. Zipf’s law
 
 ## Chapter 5: Dependency parsing
