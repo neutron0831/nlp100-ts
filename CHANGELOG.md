@@ -1,5 +1,18 @@
 # Changelog
 
+<a name="0.4.1"></a>
+## [v0.4.1](https://github.com/neutron0831/nlp100-ts/compare/v0.4.0...v0.4.1) (2023-05-29)
+
+### Changed
+
+- 💄 Remove grid lines for the x-axis ([#37](https://github.com/neutron0831/nlp100-ts/issues/37)) [[0e82cf5](https://github.com/neutron0831/nlp100-ts/commit/0e82cf5)]
+- ♻️ Remove line breaks around `options.scales.x.grid` ([#36](https://github.com/neutron0831/nlp100-ts/issues/36)) [[b4cf4ed](https://github.com/neutron0831/nlp100-ts/commit/b4cf4ed)]
+
+### Removed
+
+- 🔇 Remove an unnecessary debug log ([#39](https://github.com/neutron0831/nlp100-ts/issues/39)) [[901214f](https://github.com/neutron0831/nlp100-ts/commit/901214f)]
+
+
 <a name="0.4.0"></a>
 ## [v0.4.0](https://github.com/neutron0831/nlp100-ts/compare/v0.3.0...v0.4.0) (2023-05-29)
 
