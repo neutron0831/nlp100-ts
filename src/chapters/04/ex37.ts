@@ -44,6 +44,9 @@ async function ex37(chart?: Chart): Promise<Frequency[] | void> {
     datasets: [{ label: 'frequency', data: map(topTenWords, 'frequency') }],
   }
   const options = {
+    scales: {
+      x: { grid: { display: false } },
+    },
     plugins: {
       title: { display: true, text: "Top-ten words co-occurring with 'Alice'" },
       legend: { display: false },
