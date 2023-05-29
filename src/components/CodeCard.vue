@@ -59,7 +59,7 @@
     return await new MDParser().parse(`\`\`\`ts\n${code}\n\`\`\``)
   }
 
-  async function Run() {
+  async function run() {
     if (isChartEx.value) {
       await Ex.value[`ex${exercise}`](
         chart.value,
@@ -227,7 +227,7 @@
         <VBtn
           color="primary"
           :style="{ 'margin-top': (args!.length > 0 ? 10 : 0) + 'px' }"
-          @click="Run"
+          @click="run"
         >
           Run
         </VBtn>
