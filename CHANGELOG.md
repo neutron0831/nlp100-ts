@@ -1,5 +1,46 @@
 # Changelog
 
+<a name="0.4.0"></a>
+## [v0.4.0](https://github.com/neutron0831/nlp100-ts/compare/v0.3.0...v0.4.0) (2023-05-29)
+
+### Added
+
+- ✅ Add Exercise 39 test ([#39](https://github.com/neutron0831/nlp100-ts/issues/39)) [[71f3893](https://github.com/neutron0831/nlp100-ts/commit/71f3893)]
+- ✨ Add Exercise 39 ([#39](https://github.com/neutron0831/nlp100-ts/issues/39)) [[1ad9c55](https://github.com/neutron0831/nlp100-ts/commit/1ad9c55)]
+- ✅ Add Exercise 38 test ([#38](https://github.com/neutron0831/nlp100-ts/issues/38)) [[2a28908](https://github.com/neutron0831/nlp100-ts/commit/2a28908)]
+- ✨ Add Exercise 38 ([#38](https://github.com/neutron0831/nlp100-ts/issues/38)) [[7a253fc](https://github.com/neutron0831/nlp100-ts/commit/7a253fc)]
+- ✅ Add Exercise 37 test ([#37](https://github.com/neutron0831/nlp100-ts/issues/37)) [[7b393f2](https://github.com/neutron0831/nlp100-ts/commit/7b393f2)]
+- ✨ Add Exercise 37 ([#37](https://github.com/neutron0831/nlp100-ts/issues/37)) [[c69cc4d](https://github.com/neutron0831/nlp100-ts/commit/c69cc4d)]
+- ✅ Add Exercise 36 test ([#36](https://github.com/neutron0831/nlp100-ts/issues/36)) [[a23470b](https://github.com/neutron0831/nlp100-ts/commit/a23470b)]
+- ✨ Add Exercise 36 ([#36](https://github.com/neutron0831/nlp100-ts/issues/36)) [[1e8de50](https://github.com/neutron0831/nlp100-ts/commit/1e8de50)]
+- ✅ Add Exercise 35 test ([#35](https://github.com/neutron0831/nlp100-ts/issues/35)) [[5b11a00](https://github.com/neutron0831/nlp100-ts/commit/5b11a00)]
+- ✨ Add Exercise 35 ([#35](https://github.com/neutron0831/nlp100-ts/issues/35)) [[eb8de45](https://github.com/neutron0831/nlp100-ts/commit/eb8de45)]
+- ✅ Add Exercise 34 test ([#34](https://github.com/neutron0831/nlp100-ts/issues/34)) [[7e00943](https://github.com/neutron0831/nlp100-ts/commit/7e00943)]
+- ✨ Add Exercise 34 ([#34](https://github.com/neutron0831/nlp100-ts/issues/34)) [[ee78be1](https://github.com/neutron0831/nlp100-ts/commit/ee78be1)]
+- ✅ Add Exercise 33 test ([#33](https://github.com/neutron0831/nlp100-ts/issues/33)) [[3d2be41](https://github.com/neutron0831/nlp100-ts/commit/3d2be41)]
+- ✨ Add Exercise 33 ([#33](https://github.com/neutron0831/nlp100-ts/issues/33)) [[d841cbc](https://github.com/neutron0831/nlp100-ts/commit/d841cbc)]
+- ✅ Add Exercise 32 test ([#32](https://github.com/neutron0831/nlp100-ts/issues/32)) [[dab71fe](https://github.com/neutron0831/nlp100-ts/commit/dab71fe)]
+- ✨ Add Exercise 32 ([#32](https://github.com/neutron0831/nlp100-ts/issues/32)) [[6439478](https://github.com/neutron0831/nlp100-ts/commit/6439478)]
+- ✅ Add Exercise 31 test ([#31](https://github.com/neutron0831/nlp100-ts/issues/31)) [[a826e7f](https://github.com/neutron0831/nlp100-ts/commit/a826e7f)]
+- ✨ Add Exercise 31 ([#31](https://github.com/neutron0831/nlp100-ts/issues/31)) [[01d904a](https://github.com/neutron0831/nlp100-ts/commit/01d904a)]
+- ✅ Add Exercise 30 test ([#30](https://github.com/neutron0831/nlp100-ts/issues/30)) [[222f0ef](https://github.com/neutron0831/nlp100-ts/commit/222f0ef)]
+- ✨ Add Exercise 30 ([#30](https://github.com/neutron0831/nlp100-ts/issues/30)) [[ef42bb3](https://github.com/neutron0831/nlp100-ts/commit/ef42bb3)]
+- ✨ Update `AttachmentPanel.vue` [[e6b2af8](https://github.com/neutron0831/nlp100-ts/commit/e6b2af8)]
+
+### Changed
+
+- 🍱 Add `alice.txt.conll` [[0116db7](https://github.com/neutron0831/nlp100-ts/commit/0116db7)]
+
+### Fixed
+
+- ✏️ Rename `Run()` to `run()` in `CodeCard.vue` [[37e0b94](https://github.com/neutron0831/nlp100-ts/commit/37e0b94)]
+
+### Miscellaneous
+
+- 📝 Add `README.md` of Chapter 4 [[47d5e5e](https://github.com/neutron0831/nlp100-ts/commit/47d5e5e)]
+- 📝 Update `README.md` [[2274ce5](https://github.com/neutron0831/nlp100-ts/commit/2274ce5)]
+
+
 <a name="0.3.0"></a>
 ## [v0.3.0](https://github.com/neutron0831/nlp100-ts/compare/v0.2.0...v0.3.0) (2023-04-19)
 
