@@ -23,9 +23,7 @@ async function ex36(chart?: Chart): Promise<Frequency[] | void> {
   }
   const options = {
     scales: {
-      x: {
-        grid: { display: false },
-      },
+      x: { grid: { display: false } },
     },
     plugins: {
       title: { display: true, text: 'Top-ten frequent words' },
