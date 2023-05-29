@@ -15,6 +15,7 @@ async function ex39(chart?: Chart): Promise<{ [rank: number]: number } | void> {
       .map((frequency, i) => [i + 1, frequency]),
   )
 
+  console.log(frequencies)
   if (!chart) return frequencies
 
   const data = {
