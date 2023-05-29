@@ -39,18 +39,18 @@
 28. [Remove MediaWiki markups](./03/ex28.ts)
 29. [Country flag](./03/ex29.ts)
 
-## Chapter 4: POS tagging
+## [Chapter 4: POS tagging](./04)
 
-30. Reading the result
-31. Verbs
-32. Base forms of verbs
-33. A of B
-34. A B
-35. Frequency of words
-36. Top-ten frequent words
-37. Top-ten words co-occurring with ‘Alice’
-38. Histogram
-39. Zipf’s law
+30. [Reading the result](./04/ex30.ts)
+31. [Verbs](./04/ex31.ts)
+32. [Base forms of verbs](./04/ex32.ts)
+33. [A of B](./04/ex33.ts)
+34. [A B](./04/ex34.ts)
+35. [Frequency of words](./04/ex35.ts)
+36. [Top-ten frequent words](./04/ex36.ts)
+37. [Top-ten words co-occurring with ‘Alice’](./04/ex37.ts)
+38. [Histogram](./04/ex38.ts)
+39. [Zipf’s law](./04/ex39.ts)
 
 ## Chapter 5: Dependency parsing
 
