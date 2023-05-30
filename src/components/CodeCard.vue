@@ -1,6 +1,5 @@
 <script lang="ts" setup>
-  import Chart from 'chart.js/auto'
-  import type { ChartType } from 'chart.js/auto'
+  import Chart, { type ChartType } from 'chart.js/auto'
   import { match, P } from 'ts-pattern'
   import MDParser from '@/utils/md-parser'
   import { Argument, formatCode, getArguments } from '@/utils/source-code'

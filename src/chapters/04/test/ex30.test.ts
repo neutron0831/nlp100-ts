@@ -1,8 +1,7 @@
 // See [Explicit URL Imports](https://vitejs.dev/guide/assets.html#explicit-url-imports)
 import aliceTextConll from '@/assets/alice.txt.conll?url'
 import { execSync } from 'node:child_process'
-import { ex30 } from '../ex30'
-import type { Morpheme } from '../ex30'
+import { ex30, type Morpheme } from '../ex30'
 
 describe('30. Reading the result', () => {
   it('a list of mapping objects, each of which associates a surface form, lemma (base form), part-of-speech tag', async () => {

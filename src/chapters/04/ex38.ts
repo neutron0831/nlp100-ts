@@ -1,5 +1,4 @@
-import { ex35 } from './ex35'
-import type { Frequency } from './ex35'
+import { ex35, type Frequency } from './ex35'
 import Chart from 'chart.js/auto'
 import { maxBy, range } from 'lodash'
 

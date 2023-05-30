@@ -1,5 +1,4 @@
-import { ex30 } from './ex30'
-import type { Morpheme } from './ex30'
+import { ex30, type Morpheme } from './ex30'
 import type { Frequency } from './ex35'
 import Chart from 'chart.js/auto'
 import { find, findIndex, map, orderBy } from 'lodash'
