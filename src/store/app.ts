@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { range, sortBy } from 'lodash'
 // @ts-ignore-line: TS2307
-import { Octokit } from 'https://cdn.skypack.dev/@octokit/rest'
+import { Octokit } from 'https://esm.sh/@octokit/rest'
 import { GetResponseDataTypeFromEndpointMethod } from '@octokit/types'
 import MDParser from '@/utils/md-parser'
 
@@ -25,6 +25,7 @@ export interface Chapter {
   description: string
   exercises: Exercise[]
 }
+
 interface State {
   owner: string
   repository: string
@@ -32,11 +33,15 @@ interface State {
   chapters: Chapters
 }
 
+const owner = import.meta.env.VITE_GITHUB_OWNER
+const repository = import.meta.env.VITE_GITHUB_REPOSITORY
+const auth = import.meta.env.VITE_PERSONAL_ACCESS_TOKEN
+
 export const useAppStore = defineStore('app', {
   state: (): State => ({
-    owner: import.meta.env.VITE_GITHUB_OWNER,
-    repository: import.meta.env.VITE_GITHUB_REPOSITORY,
-    octokit: new Octokit({ auth: import.meta.env.VITE_PERSONAL_ACCESS_TOKEN }),
+    owner,
+    repository,
+    octokit: new Octokit({ auth }),
     chapters: {},
   }),
   getters: {
