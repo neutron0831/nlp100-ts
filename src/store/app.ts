@@ -72,12 +72,14 @@ export const useAppStore = defineStore('app', {
               milestone: number,
               state: 'all',
             })
-          ).data.map(async (issue: ListForRepoResponseDataType) => ({
-            number: issue.number % 100,
-            state: issue.state,
-            title: issue.title,
-            body: await mdParser.parse(issue.body),
-          })),
+          ).data
+            .filter(({ number }: { number: number }) => number <= 100)
+            .map(async (issue: ListForRepoResponseDataType) => ({
+              number: issue.number % 100,
+              state: issue.state,
+              title: issue.title,
+              body: await mdParser.parse(issue.body),
+            })),
         ),
         'number',
       )
